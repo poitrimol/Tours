@@ -24,9 +24,9 @@
 
 | VLAN | Service | 
 |-|-|
-| 220 | Management |
-| 221 | Conception | 
-| 222 | Production |
+| 225 | Management |
+| 226 | Conception | 
+| 227 | Production |
 
 ## Détails des équipements serveurs
 
