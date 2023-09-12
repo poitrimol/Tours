@@ -1,4 +1,9 @@
-site_name: Tours
+site_name: Documentation Tours
+
 theme:
   name: material
   logo: img/sio.png
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
