@@ -1,6 +1,6 @@
 # Infrastructure de Tours
 
-![Plan d'adressage](tours.png)
+![Plan d'adressage](img/tours.png)
 
 ## Infrastructure
 
