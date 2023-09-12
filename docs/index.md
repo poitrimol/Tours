@@ -1,11 +1,5 @@
 # Documentation de Tours
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-## Commands
-
-test5
-
 ## Plan d'adressage
 
 | Nom | Adresse réseau | Masque (CIDR, Binaire) | Broadcast |
