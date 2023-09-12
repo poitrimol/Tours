@@ -1,3 +1,4 @@
-site_name: Documentation Tours
-theme: 
+site_name: Tours
+theme:
   name: material
+  logo: sio.png

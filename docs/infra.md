@@ -1,5 +1,15 @@
 # Infrastructure de Tours
 
+![Plan d'adressage](tours.png)
+
+## Infrastructure
+
+| Nombre d'utilisateurs | 179 |
+|-|-|
+| Nombres de stations de travail | 95 |
+| Fixes | 90 |
+| Portables | 5 |
+| Nombre de serveus | 10 |
 
 ## Plan d'adressage
 
@@ -17,15 +27,6 @@
 | 220 | Management |
 | 221 | Conception | 
 | 222 | Production |
-
-## Infrastructure
-
-| Nombre d'utilisateurs | 179 |
-|-|-|
-| Nombres de stations de travail | 95 |
-| Fixes | 90 |
-| Portables | 5 |
-| Nombre de serveus | 10 |
 
 ## Détails des équipements serveurs
 
