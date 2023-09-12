@@ -24,7 +24,7 @@
 
 | VLAN | Service | 
 |-|-|
-| 225 | Management |
+| 220 | Management |
 | 226 | Conception | 
 | 227 | Production |
 
