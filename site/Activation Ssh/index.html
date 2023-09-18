@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../Activation%20Ssh/">
+        <link rel="prev" href="..">
       
       
-        <link rel="next" href="../vlan/">
+        <link rel="next" href="../infra/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Infrastructure de Tours - Documentation Tours</title>
+        <title>Activation Ssh - Documentation Tours</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#infrastructure-de-tours" class="md-skip">
+        <a href="#configurer-le-switch" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Infrastructure de Tours
+              Activation Ssh
             
           </span>
         </div>
@@ -205,25 +205,6 @@
       
   
   
-  
-    <li class="md-nav__item">
-      <a href="../Activation%20Ssh/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activation Ssh
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -232,14 +213,12 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
   <span class="md-ellipsis">
-    Infrastructure de Tours
+    Activation Ssh
   </span>
   
 
@@ -250,7 +229,7 @@
         
   
   <span class="md-ellipsis">
-    Infrastructure de Tours
+    Activation Ssh
   </span>
   
 
@@ -262,8 +241,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -272,29 +249,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#infrastructure" class="md-nav__link">
-    Infrastructure
+  <a href="#configurer-le-switch" class="md-nav__link">
+    Configurer le Switch
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#plan-dadressage" class="md-nav__link">
-    Plan d'adressage
+  <a href="#activer-le-ssh-sur-un-switch-cisco" class="md-nav__link">
+    Activer le SSH sur un Switch Cisco
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#vlan-tours" class="md-nav__link">
-    VLAN Tours
+  <a href="#etape-1-verifier-la-version-de-lequipement-cisco-pour-le-protocole-ssh" class="md-nav__link">
+     Etape 1 : Vérifier la version de l'équipement Cisco pour le protocole SSH
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#details-des-equipements-serveurs" class="md-nav__link">
-    Détails des équipements serveurs
+  <a href="#etape-2-creation-du-nom-dhote-et-du-nom-de-domaine-et-dun-mot-de-passe-pour-le-mode-privilegie" class="md-nav__link">
+     Etape 2 : Création du nom d'hôte et du nom de domaine, et d'un mot de passe pour le mode privilégié
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#etape-3-generation-de-la-paire-de-cles-asymetriques-rsa" class="md-nav__link">
+     Etape 3 : Génération de la paire de clés asymétriques RSA
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#etape-4-activation-du-protocole-ssh-sur-le-switch-ou-routeur-cisco" class="md-nav__link">
+     Etape 4 : Activation du protocole SSH sur le switch ou routeur Cisco
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#etape-5-test-de-connexion-ssh-avec-putty" class="md-nav__link">
+     Etape 5 : Test de connexion SSH avec PuTTy
   </a>
   
 </li>
@@ -303,6 +301,25 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../infra/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Infrastructure de Tours
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -343,8 +360,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -353,29 +368,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#infrastructure" class="md-nav__link">
-    Infrastructure
+  <a href="#configurer-le-switch" class="md-nav__link">
+    Configurer le Switch
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#plan-dadressage" class="md-nav__link">
-    Plan d'adressage
+  <a href="#activer-le-ssh-sur-un-switch-cisco" class="md-nav__link">
+    Activer le SSH sur un Switch Cisco
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#vlan-tours" class="md-nav__link">
-    VLAN Tours
+  <a href="#etape-1-verifier-la-version-de-lequipement-cisco-pour-le-protocole-ssh" class="md-nav__link">
+     Etape 1 : Vérifier la version de l'équipement Cisco pour le protocole SSH
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#details-des-equipements-serveurs" class="md-nav__link">
-    Détails des équipements serveurs
+  <a href="#etape-2-creation-du-nom-dhote-et-du-nom-de-domaine-et-dun-mot-de-passe-pour-le-mode-privilegie" class="md-nav__link">
+     Etape 2 : Création du nom d'hôte et du nom de domaine, et d'un mot de passe pour le mode privilégié
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#etape-3-generation-de-la-paire-de-cles-asymetriques-rsa" class="md-nav__link">
+     Etape 3 : Génération de la paire de clés asymétriques RSA
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#etape-4-activation-du-protocole-ssh-sur-le-switch-ou-routeur-cisco" class="md-nav__link">
+     Etape 4 : Activation du protocole SSH sur le switch ou routeur Cisco
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#etape-5-test-de-connexion-ssh-avec-putty" class="md-nav__link">
+     Etape 5 : Test de connexion SSH avec PuTTy
   </a>
   
 </li>
@@ -395,203 +431,58 @@
                   
 
 
-<h1 id="infrastructure-de-tours">Infrastructure de Tours</h1>
-<p><img alt="Plan d'adressage" src="../img/tours.png" /></p>
-<h2 id="infrastructure">Infrastructure</h2>
+<h2 id="configurer-le-switch">Configurer le Switch</h2>
+<h2 id="activer-le-ssh-sur-un-switch-cisco">Activer le SSH sur un Switch Cisco</h2>
+<h1 id="etape-1-verifier-la-version-de-lequipement-cisco-pour-le-protocole-ssh"><span style="color: darkblue"> <strong>Etape 1 :</strong> Vérifier la version de l'équipement Cisco pour le protocole SSH</h1>
+<p>On vérifie la version du switch a l'aide de la commande <span style="color: blue">"show version"</span> pour s'assuré que le switch soit compatible avec le protocole SSH.</p>
+<h1 id="etape-2-creation-du-nom-dhote-et-du-nom-de-domaine-et-dun-mot-de-passe-pour-le-mode-privilegie"><span style="color: darkblue"> <strong>Etape 2 :</strong> Création du nom d'hôte et du nom de domaine, et d'un mot de passe pour le mode privilégié</h1>
+<p>La création d’un nom d’hôte et d’un nom de domaine est indispensable à la configuration d’une connexion SSH. Vous devez donc être en mode configuration et réaliser les commandes suivantes :</p>
+<p><screen></p>
+<p>Ici, nous avons choisi de donner pour nom d’hôte "admin" et pour nom de domaine tours.sportludique.fr.</p>
+<p>Pour créer un mot de passe pour le mode privilégié, il faut se placer dans le mode configuration et entrer la commande :</p>
+<p><span style="color: blue">"enable password mot_de_passe"</p>
+<h1 id="etape-3-generation-de-la-paire-de-cles-asymetriques-rsa"><span style="color: darkblue"> <strong>Etape 3 :</strong> Génération de la paire de clés asymétriques RSA</h1>
+<p>la clé RSA est une méthode de chiffrement dite asymétrique. Elle est composée de deux clés, une privée et une publique, chiffrées sur 768 bits minimum pour le SSH v2, et permet d’assurer une sécurité optimale. Pour générer cette paire de clés, il suffit d’entrer dans la conf puis entrer la commande :</p>
+<p><span style="color: blue">"crypto key generate rsa"</p>
+<p>Il est également demandé d’entrer la taille souhaitée de la clé en bits. Il est préférable de choisir une taille supérieure à 768 bits pour assurer une plus grande sécurité. Nous avons ici choisi des clés de 1024 bits.</p>
+<h1 id="etape-4-activation-du-protocole-ssh-sur-le-switch-ou-routeur-cisco"><span style="color: darkblue"> <strong>Etape 4 :</strong> Activation du protocole SSH sur le switch ou routeur Cisco</h1>
+<p>Pour activer le protocole SSH, il suffit d’entrer la commande “ip ssh version 2”. Il faut ensuite entrer en mode configuration de ligne VTY dans le but de :</p>
+<ul>
+<li>n’accepter que les connexions SSH au switch, au moyen de la commande “transport input ssh” ;</li>
+<li>ne permettre que des connexions SSH vers d’autres équipements, au moyen de la commande “transport output ssh” ;</li>
+<li>enregistrer le compte utilisateur existant comme compte permettant de mettre en place la connexion en entrant “login local”.</li>
+</ul>
 <table>
 <thead>
 <tr>
-<th>Nombre d'utilisateurs</th>
-<th>179</th>
+<th style="text-align: center;">"(config)#ip ssh version 2"</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Nombres de stations de travail</td>
-<td>95</td>
+<td style="text-align: center;">"(config)#line vty 0 4"</td>
 </tr>
 <tr>
-<td>Fixes</td>
-<td>90</td>
+<td style="text-align: center;">"(config-line)#transport input ssh"</td>
 </tr>
 <tr>
-<td>Portables</td>
-<td>5</td>
+<td style="text-align: center;">"(config-line)#transport output ssh"</td>
 </tr>
 <tr>
-<td>Nombre de serveus</td>
-<td>10</td>
+<td style="text-align: center;">"(config-line)#login local"</td>
+</tr>
+<tr>
+<td style="text-align: center;">"(config-line)#exit"</td>
 </tr>
 </tbody>
 </table>
-<h2 id="plan-dadressage">Plan d'adressage</h2>
-<table>
-<thead>
-<tr>
-<th>Nom</th>
-<th>Adresse réseau</th>
-<th>Masque (CIDR, Binaire)</th>
-<th>Broadcast</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Chateauroux</td>
-<td>172.16.0.0</td>
-<td>/19 255.255.224.0</td>
-<td>172.16.31.255</td>
-</tr>
-<tr>
-<td>Tours</td>
-<td>172.16.32.0</td>
-<td>/19 255.255.224.0</td>
-<td>172.16.63.255</td>
-</tr>
-<tr>
-<td>Chartres</td>
-<td>172.16.64.0</td>
-<td>/19 255.255.224.0</td>
-<td>172.16.95.255</td>
-</tr>
-<tr>
-<td>Orléans</td>
-<td>172.16.96.0</td>
-<td>/19 255.255.224.0</td>
-<td>172.16.127.255</td>
-</tr>
-</tbody>
-</table>
-<h2 id="vlan-tours">VLAN Tours</h2>
-<table>
-<thead>
-<tr>
-<th>VLAN</th>
-<th>Adress réseau + CIDR</th>
-<th>Plage d'adresse</th>
-<th>Broadcast</th>
-<th>Service</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>220</td>
-<td>172.16.32.0 /24</td>
-<td>172.16.32.1 - 172.16.32.254</td>
-<td>172.16.32.255</td>
-<td>Management</td>
-</tr>
-<tr>
-<td>221</td>
-<td>172.16.33.0 /24</td>
-<td>172.16.33.1 - 172.16.33.254</td>
-<td>172.16.33.255</td>
-<td>DMZ</td>
-</tr>
-<tr>
-<td>222</td>
-<td>172.16.34.0 /24</td>
-<td>172.16.34.1 - 172.16.34.254</td>
-<td>172.16.34.255</td>
-<td>...</td>
-</tr>
-<tr>
-<td>223</td>
-<td>172.16.35.0 /24</td>
-<td>172.16.35.1 - 172.16.35.254</td>
-<td>172.16.35.255</td>
-<td>...</td>
-</tr>
-<tr>
-<td>224</td>
-<td>172.16.36.0 /24</td>
-<td>172.16.36.1 - 172.16.36.254</td>
-<td>172.16.36.255</td>
-<td>...</td>
-</tr>
-<tr>
-<td>225</td>
-<td>172.16.37.0 /24</td>
-<td>172.16.37.1 - 172.16.37.254</td>
-<td>172.16.37.255</td>
-<td>...</td>
-</tr>
-<tr>
-<td>226</td>
-<td>172.16.38.0 /24</td>
-<td>172.16.38.1 - 172.16.38.254</td>
-<td>172.16.38.255</td>
-<td>Conception</td>
-</tr>
-<tr>
-<td>227</td>
-<td>172.16.39.0 /24</td>
-<td>172.16.39.1 - 172.16.39.254</td>
-<td>172.16.39.255</td>
-<td>Production</td>
-</tr>
-<tr>
-<td>228</td>
-<td>172.16.40.0 /24</td>
-<td>172.16.40.1 - 172.16.40.254</td>
-<td>172.16.40.255</td>
-<td>...</td>
-</tr>
-<tr>
-<td>229</td>
-<td>172.16.41.0 /24</td>
-<td>172.16.41.1 - 172.16.41.254</td>
-<td>172.16.41.255</td>
-<td>...</td>
-</tr>
-</tbody>
-</table>
-<h2 id="details-des-equipements-serveurs">Détails des équipements serveurs</h2>
-<table>
-<thead>
-<tr>
-<th>Nom</th>
-<th>Fonction</th>
-<th>OS</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>TRS_DC_01</td>
-<td>Contrôleur principal de domaine</td>
-<td>Windows server 2008 R2</td>
-</tr>
-<tr>
-<td></td>
-<td>Serveur primaire DNS</td>
-<td>Domaine : tour.local</td>
-</tr>
-<tr>
-<td></td>
-<td>Serveur DHCP</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>Serveur de fichiers</td>
-<td></td>
-</tr>
-<tr>
-<td>TRS_DC_02</td>
-<td>Controleur secondaire de domaine</td>
-<td>Windows server 2008 R2</td>
-</tr>
-<tr>
-<td></td>
-<td>Serveur secondaire DNS</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>Serveur de fichiers répliqué</td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p>Si vous n’avez pas encore créé de compte utilisateur, retournez en mode configuration et entrez la commande suivante :</p>
+<p><span style="color: blue">username "nom_utilisateur" password "mot_de_passe"</p>
+<p>Pour vérifier que la configuration a bien été prise en compte par l’équipement, entrez “show run”.</p>
+<h1 id="etape-5-test-de-connexion-ssh-avec-putty"><span style="color: darkblue"> <strong>Etape 5 :</strong> Test de connexion SSH avec PuTTy</h1>
+<p>Windows ne possède pas de client SSH natif. Il faut donc en télécharger un. Il est possible d’utiliser PuTTy.</p>
+<p>Pour le mettre en mode SSH, il vous suffit de cliquer sur “SSH” et d’entrer le nom d’hôte ou l’adresse IP de l’équipement auquel vous voulez vous connecter.</p>
+<p><img alt="Putty configuration" src="../img/Putty_conf.PNG" /></p>
 
 
 

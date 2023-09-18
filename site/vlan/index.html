@@ -205,6 +205,25 @@
   
   
     <li class="md-nav__item">
+      <a href="../Activation%20Ssh/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Activation Ssh
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../infra/" class="md-nav__link">
         
   
@@ -270,36 +289,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#vlan-220" class="md-nav__link">
-    VLAN 220
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vlan-221" class="md-nav__link">
-    VLAN 221
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vlan-222" class="md-nav__link">
-    VLAN 222
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vlan-223" class="md-nav__link">
-    VLAN 223
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vlan-224" class="md-nav__link">
-    VLAN 224
+  <a href="#vlans" class="md-nav__link">
+    VLANS
   </a>
   
 </li>
@@ -339,36 +330,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#vlan-220" class="md-nav__link">
-    VLAN 220
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vlan-221" class="md-nav__link">
-    VLAN 221
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vlan-222" class="md-nav__link">
-    VLAN 222
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vlan-223" class="md-nav__link">
-    VLAN 223
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vlan-224" class="md-nav__link">
-    VLAN 224
+  <a href="#vlans" class="md-nav__link">
+    VLANS
   </a>
   
 </li>
@@ -389,12 +352,11 @@
 
 
 <h1 id="documentation-vlan">Documentation VLAN</h1>
-<h2 id="vlan-220">VLAN 220</h2>
+<h2 id="vlans">VLANS</h2>
 <table>
 <thead>
 <tr>
 <th>VLAN</th>
-<th>Port</th>
 <th>Adresses réseau + CIDR</th>
 <th>Plage d'adresse</th>
 <th>Broadcast</th>
@@ -404,11 +366,38 @@
 <tbody>
 <tr>
 <td>220</td>
-<td>gi 0/1</td>
 <td>172.16.32.0 /24</td>
 <td>172.16.32.1 - 172.16.32.254</td>
 <td>172.16.32.255</td>
 <td>Management</td>
+</tr>
+<tr>
+<td>221</td>
+<td>192.168.37.0 /24</td>
+<td>192.168.37.1 - 192.168.37.254</td>
+<td>192.168.37.255</td>
+<td>DMZ</td>
+</tr>
+<tr>
+<td>222</td>
+<td>172.16.34.0 /24</td>
+<td>172.16.34.1 - 172.16.34.254</td>
+<td>172.16.34.255</td>
+<td>...</td>
+</tr>
+<tr>
+<td>223</td>
+<td>172.16.35.0 /24</td>
+<td>172.16.35.1 - 172.16.35.254</td>
+<td>172.16.35.255</td>
+<td>...</td>
+</tr>
+<tr>
+<td>224</td>
+<td>172.16.36.0 /24</td>
+<td>172.16.36.1 - 172.16.36.254</td>
+<td>172.16.36.255</td>
+<td>...</td>
 </tr>
 </tbody>
 </table>
@@ -416,105 +405,35 @@
 <thead>
 <tr>
 <th>Équipement</th>
+<th>Port</th>
 <th>Adresse IP</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Switch</td>
+<td>gi0/1</td>
 <td>172.16.32.1</td>
 </tr>
-</tbody>
-</table>
-<h2 id="vlan-221">VLAN 221</h2>
-<table>
-<thead>
 <tr>
-<th>VLAN</th>
-<th>Port</th>
-<th>Adresses réseau + CIDR</th>
-<th>Plage d'adresse</th>
-<th>Broadcast</th>
-<th>Service</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>221</td>
+<td></td>
 <td>gi 0/2</td>
-<td>172.16.33.0 /24</td>
-<td>172.16.33.1 - 172.16.33.254</td>
-<td>172.16.33.255</td>
-<td>DMZ</td>
+<td>192.168.37.1</td>
 </tr>
-</tbody>
-</table>
-<h2 id="vlan-222">VLAN 222</h2>
-<table>
-<thead>
 <tr>
-<th>VLAN</th>
-<th>Port</th>
-<th>Adresses réseau + CIDR</th>
-<th>Plage d'adresse</th>
-<th>Broadcast</th>
-<th>Service</th>
+<td></td>
+<td></td>
+<td>172.16.34.1</td>
 </tr>
-</thead>
-<tbody>
 <tr>
-<td>222</td>
-<td>...</td>
-<td>172.16.34.0 /24</td>
-<td>172.16.34.1 - 172.16.34.254</td>
-<td>172.16.34.255</td>
-<td>...</td>
+<td></td>
+<td></td>
+<td>172.16.35.1</td>
 </tr>
-</tbody>
-</table>
-<h2 id="vlan-223">VLAN 223</h2>
-<table>
-<thead>
 <tr>
-<th>VLAN</th>
-<th>Port</th>
-<th>Adresses réseau + CIDR</th>
-<th>Plage d'adresse</th>
-<th>Broadcast</th>
-<th>Service</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>223</td>
-<td>...</td>
-<td>172.16.35.0 /24</td>
-<td>172.16.35.1 - 172.16.35.254</td>
-<td>172.16.35.255</td>
-<td>...</td>
-</tr>
-</tbody>
-</table>
-<h2 id="vlan-224">VLAN 224</h2>
-<table>
-<thead>
-<tr>
-<th>VLAN</th>
-<th>Port</th>
-<th>Adresses réseau + CIDR</th>
-<th>Plage d'adresse</th>
-<th>Broadcast</th>
-<th>Service</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>224</td>
-<td>...</td>
-<td>172.16.36.0 /24</td>
-<td>172.16.36.1 - 172.16.36.254</td>
-<td>172.16.36.255</td>
-<td>...</td>
+<td></td>
+<td></td>
+<td>172.16.36.1</td>
 </tr>
 </tbody>
 </table>
