@@ -32,10 +32,10 @@ Création d'un vlan de Management :
 | Management | 220 |
 | DMZ | 221 |
 | Srv-AD/DHCP | 222 |
-| Transport-firewall | 223 |
-| Transport-routeur | 224 |
 | Conception | 226 |
 | Production | 227 |
+| Transport-firewall | 228 |
+| Transport-routeur | 229 |
 
 
 ##<span style="color: darkblue"> **Activer le SSH sur un Switch Cisco**
@@ -114,10 +114,10 @@ On entre dans la configuration du switch puis on entre sur l'interface :
 | 220 | gi0/1 |
 | 221 | gi0/2 |
 | 222 | gi0/3 |
-| 223 | gi0/4 |
-| 224 | gi0/5 |
 | 226 | gi0/13 |
 | 227 | gi0/14 |
+| 228 | gi0/18 - gi0/20 |
+| 229 | gi0/17 - gi0/19 - gi0/21 |
 
 
 ##<span style="color: darkblue"> **Relais DHCP**
