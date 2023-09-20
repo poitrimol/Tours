@@ -12,13 +12,15 @@
         <link rel="prev" href="../infra/">
       
       
+        <link rel="next" href="../trs_dm/">
+      
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.2.8">
     
     
       
-        <title>Documentation VLAN - Documentation Tours</title>
+        <title>Nutanix - Documentation Tours</title>
       
     
     
@@ -63,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#documentation-vlan" class="md-skip">
+        <a href="#nutanix" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Documentation VLAN
+              Nutanix
             
           </span>
         </div>
@@ -256,7 +258,7 @@
           
   
   <span class="md-ellipsis">
-    Documentation VLAN
+    Nutanix
   </span>
   
 
@@ -267,7 +269,7 @@
         
   
   <span class="md-ellipsis">
-    Documentation VLAN
+    Nutanix
   </span>
   
 
@@ -289,8 +291,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#vlans" class="md-nav__link">
-    VLANS
+  <a href="#presentation" class="md-nav__link">
+    Présentation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#initialisation-a-nutanix" class="md-nav__link">
+     Initialisation à Nutanix
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creation-de-la-machine-virtuelle" class="md-nav__link">
+     Création de la machine virtuelle
   </a>
   
 </li>
@@ -299,6 +315,25 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trs_dm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Controle de domaine
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -330,8 +365,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#vlans" class="md-nav__link">
-    VLANS
+  <a href="#presentation" class="md-nav__link">
+    Présentation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#initialisation-a-nutanix" class="md-nav__link">
+     Initialisation à Nutanix
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creation-de-la-machine-virtuelle" class="md-nav__link">
+     Création de la machine virtuelle
   </a>
   
 </li>
@@ -351,107 +400,36 @@
                   
 
 
-<h1 id="documentation-vlan">Documentation VLAN</h1>
-<h2 id="vlans">VLANS</h2>
-<table>
-<thead>
-<tr>
-<th>VLAN</th>
-<th>Adresses réseau + CIDR</th>
-<th>Plage d'adresse</th>
-<th>Broadcast</th>
-<th>Service</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>220</td>
-<td>172.28.32.0 /24</td>
-<td>172.28.32.1 - 172.28.32.254</td>
-<td>172.28.32.255</td>
-<td>Management</td>
-</tr>
-<tr>
-<td>221</td>
-<td>192.168.37.0 /24</td>
-<td>192.168.37.1 - 192.168.37.254</td>
-<td>192.168.37.255</td>
-<td>DMZ</td>
-</tr>
-<tr>
-<td>222</td>
-<td>172.28.34.0 /24</td>
-<td>172.28.34.1 - 172.28.34.254</td>
-<td>172.28.34.255</td>
-<td>...</td>
-</tr>
-<tr>
-<td>223</td>
-<td>172.28.35.0 /24</td>
-<td>172.28.35.1 - 172.28.35.254</td>
-<td>172.28.35.255</td>
-<td>...</td>
-</tr>
-<tr>
-<td>224</td>
-<td>172.28.36.0 /24</td>
-<td>172.28.36.1 - 172.28.36.254</td>
-<td>172.28.36.255</td>
-<td>...</td>
-</tr>
-<tr>
-<td>225</td>
-<td>172.28.37.0 /24</td>
-<td>172.28.37.1 - 172.28.37.254</td>
-<td>172.28.37.255</td>
-<td>srv/ad/dhcp</td>
-</tr>
-<tr>
-<td>226</td>
-<td>172.28.38.0 /24</td>
-<td>172.28.38.1 - 172.28.38.254</td>
-<td>172.28.38.255</td>
-<td>Conception</td>
-</tr>
-<tr>
-<td>227</td>
-<td>172.28.39.0 /24</td>
-<td>172.28.39.1 - 172.28.39.254</td>
-<td>172.28.39.255</td>
-<td>Production</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>Port</th>
-<th>Vlan</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>gi0/1</td>
-<td>220</td>
-</tr>
-<tr>
-<td>gi0/2</td>
-<td>221</td>
-</tr>
-<tr>
-<td>gi0/3</td>
-<td>225</td>
-</tr>
-<tr>
-<td>gi0/4</td>
-<td>226</td>
-</tr>
-<tr>
-<td>gi0/5</td>
-<td>227</td>
-</tr>
-</tbody>
-</table>
+<h1 id="nutanix"><strong>Nutanix</strong></h1>
+<h2 id="presentation">Présentation</h2>
+<p><strong>Nutanix</strong> est une solution informatique révolutionnaire qui simplifie considérablement la gestion de l'infrastructure informatique et des réseaux pour les entreprises. Elle est particulièrement pertinente pour les administrateurs réseau qui cherchent à optimiser la création et <strong>la gestion de machines virtuelles (VM) tout en assurant une administration réseau efficace.</strong></p>
+<h2 id="initialisation-a-nutanix"><span style="color: darkblue"> <strong>Initialisation à Nutanix</strong></h2>
+<p><strong>- Étape 1 :</strong> Accéder à l'URL fournie par votre professeur </p>
+<p>(<em>https://172.16.90.200:9440</em>)</p>
+<p><strong>- Étape 2 :</strong> Authentification sur la plateforme Nutanix </p>
+<p>Login : "nom"@lan.sio.lyceefulbert.fr</p>
+<p>Mot de passe : "Mdp de lan.sio.lyceefulbert.fr"</p>
+<p><strong>- Étape 3 :</strong> Accéder au tableau de bord Nutanix</p>
+<p><img alt="Tableau de bord Nutanix" src="../img/tbl_de_bord_nutanix.png" /></p>
+<p><strong>- Étape 4 :</strong> Création de votre machine virtuelle (VM)</p>
+<p><img alt="Create VM Nutanix" src="../img/create_vm_nutanix.png" /></p>
+<h2 id="creation-de-la-machine-virtuelle"><span style="color: darkblue"> <strong>Création de la machine virtuelle</strong></h2>
+<p><strong>- Étape 1 :</strong> Donner un nom à la VM</p>
+<p>Donner un nom significatif à la machine virtuelle, ici on utilise "TRS_DC_01" (Tours_Domaine Controller_Numéro 1). Cela permettra de l'identifier facilement dans notre environnement virtuel.</p>
+<p><strong>- Étape 2 :</strong> Attribution de la mémoire RAM</p>
+<p>Augmenter la quantité de RAM de la VM à 6 Go. Par défaut, il y a 4 Go de RAM, mais nous pouvons augmenter cette valeur pour répondre aux besoins de notre VM.</p>
+<p><strong>- Étape 3 :</strong> Ajouter l'ISO de Windows Server 2022</p>
+<p>Ajouter l'ISO de Windows Server 2022 à la VM. Utilisez l'ISO nommé "fr-fr_windows_server_2022_updated_aug_2023_x64_dvd_78639bda.iso" fourni par le professeur. Cela permettra de démarrer la VM à partir de cet ISO pour l'installation de Windows Server 2022.</p>
+<p><strong>- Étape 4 :</strong> Ajouter l'ISO de Nutanix</p>
+<p>Ajouter également l'ISO de Nutanix à la VM. Utilisez l'ISO nommé "Nutanix-VirtIO-1.2.1.iso" fourni par votre professeur. Cette étape est importante pour la configuration de la VM avec les pilotes et les outils nécessaires.</p>
+<p><strong>- Étape 5 :</strong> Ajouter un disque de 50 Go</p>
+<p>Ajouter un disque supplémentaire de 50 Go à la VM. Ce disque servira à stocker des fichiers, notamment les ISO que nous avons ajoutés précédemment.</p>
+<p><strong>- Étape 6 :</strong> Attacher un sous-réseau VLAN</p>
+<p>Associer un sous-réseau VLAN à la VM. On utilise le VLAN 222 qui a été précédemment configuré pour le serveur. Cette étape permet à la VM d'être connectée au réseau correct.</p>
+<p><strong>- Étape 7 :</strong> Activer "Use this VM as an agent VM"</p>
+<p>Cocher la case "Use this VM as an agent VM". Cela indique à la VM de fonctionner en tant que VM agent, ce qui peut être nécessaire pour certaines fonctionnalités de gestion spécifiques à Nutanix.</p>
+<p><strong>- Étape 8 :</strong> Créer la VM et suivre les étapes d'installation de Windows</p>
+<p>Enfin, créer la VM. Une fois la VM créée, démarrez-la à partir de l'ISO de Windows Server 2022 et suivez les étapes d'installation de Windows, en veillant à configurer les paramètres réseau et autres paramètres selon vos besoins. Sans oublier de sélectionner les hyperviseurs de Nutanix dans le dossier /Windows 2022/64x</p>
 
 
 
