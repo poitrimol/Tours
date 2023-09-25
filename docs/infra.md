@@ -1,4 +1,4 @@
-# **Infrastructure de Tours**
+# Infrastructure de Tours
 
 ![Plan d'adressage](img/tours.png)
 
@@ -34,16 +34,6 @@
 | 227 | 172.28.39.0 /24 | 172.28.39.1 - 172.28.39.254 | 172.28.39.255 | Production |
 | 228 | 172.28.40.0 /24 | 172.28.40.1 - 172.28.40.254 | 172.28.40.255 | Transport-firewall |
 | 229 | 172.28.41.0 /24 | 172.28.41.1 - 172.28.41.254 | 172.28.41.255 | Transport-routeur |
-
-| Vlan | Port attribuer |
-|-|-|
-| 220 | gi0/1 |
-| 221 | gi0/2 |
-| 222 | gi0/3 |
-| 223 | gi0/4 |
-| 224 | gi0/5 |
-| 226 | gi0/13 |
-| 227 | gi0/14 |
 
 ## Détails des équipements serveurs
 
