@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../nutanix/">
+        <link rel="prev" href="../Activation%20Ssh/">
       
       
-        <link rel="next" href="../vlan/">
+        <link rel="next" href="../infra/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Controle de domaine - Documentation Tours</title>
+        <title>Configuration du Firewall - Documentation Tours</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#controle-de-domaine" class="md-skip">
+        <a href="#configuration-du-firewall" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Controle de domaine
+              Configuration du Firewall
             
           </span>
         </div>
@@ -224,9 +224,29 @@
       
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../Firewall/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Configuration du Firewall
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -235,6 +255,33 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -281,29 +328,9 @@
       
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Controle de domaine
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../trs_dm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -312,33 +339,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#presentation" class="md-nav__link">
-    Présentation
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -389,8 +389,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#presentation" class="md-nav__link">
-    Présentation
+  <a href="#installation" class="md-nav__link">
+    Installation
   </a>
   
 </li>
@@ -410,9 +410,24 @@
                   
 
 
-<h1 id="controle-de-domaine"><strong>Controle de domaine</strong></h1>
-<h2 id="presentation">Présentation</h2>
-<p>Le Contrôleur de Domaine (ou Domain Controller en anglais) est un élément central dans la gestion d'un réseau basé sur le système d'exploitation Windows. Il joue un rôle fondamental dans la gestion de l'authentification des utilisateurs, la sécurité des données et la gestion des ressources au sein d'un réseau. Le Contrôleur de Domaine est souvent utilisé dans des environnements d'entreprise pour centraliser la gestion des utilisateurs, des ordinateurs et des ressources réseau.</p>
+<h1 id="configuration-du-firewall"><strong>Configuration du Firewall</strong></h1>
+<h2 id="installation">Installation</h2>
+<h1 id="etape-1-se-connecter-au-firewall">Etape 1 : Se connecter au Firewall</h1>
+<p>Nous le connectons sur le PC pour la premiere utilisation.</p>
+<p>Nous accedons au firewall pour la premiere fois via un l'IP 10.0.0.254/8.
+Nous devons donc changer l'ip du poste dans l'adresse ip du Firewall, puis nous avons juste a ouvrir un navigateur tel que Google et se connecter au firewall via l'URL ""https://10.0.0.254/admin""</p>
+<h1 id="etape-2-activation-de-license">Etape 2 : Activation de License</h1>
+<p>Pour activer la License il nous suffit de ce rendre dans "SYSTEM -&gt; LICENSE", puis on ajoute la Licence (au préalable récuperer au près de Mr Mery).</p>
+<h1 id="etape-3-formatage-de-la-carte-sd">Etape 3 : Formatage de la carte SD</h1>
+<p>Pour Formater la carte SD nous nous rendons dans "NOTIFICATION -&gt; Logs" puis on choisi notre carte SD, puis on Format.</p>
+<h1 id="etape-4-parametres-du-firewall">Etape 4 : Parametres du Firewall</h1>
+<p>On décide de changer le mot de passe Admin.
+Pour ce faire nous nous rendons</p>
+<h1 id="etape-5-parametrages-interfaces">Etape 5 : Paramétrages Interfaces</h1>
+<p>Pour parametres les interfaces on se rend dans "NETWORK -&gt; Interfaces" puis nous configurons nos interfaces In et Out.</p>
+<p>On mes des ip static sur chaque interfaces puis nous ajoutons la passerelle par default qui nous serviras a sortir (passerelle routeur).</p>
+<h2 id="etape-6-regles-de-filtrages">Etape 6 : Règles de Filtrages</h2>
+<p>Pour le moment nous choissirons le type de filtrage en "Pass All" pour pouvoir faire nos test dans un premier temps.</p>
 
 
 
