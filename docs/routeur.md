@@ -74,7 +74,7 @@ R1_TRS(config)# IP NAT INSIDE SOURCE LIST 1 POOL SORTIE
 Spécifier la route par défaut.
 
 ```js
-R1_TRS(config)# IP ROUTE 0.0.0.0 0.0.0.0 183.44.37.253
+R1_TRS(config)# IP ROUTE 0.0.0.0 0.0.0.0 183.44.37.2
 ```
 
 **- Étape 6 :** Appliquer la configuration
