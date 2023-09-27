@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../5nutanix/">
+        <link rel="prev" href="../infra/">
       
       
-        <link rel="next" href="../7routeur/">
+        <link rel="next" href="../routeur/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Controle de domaine - Documentation Tours</title>
+        <title>Nutanix - Documentation Tours</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#controle-de-domaine" class="md-skip">
+        <a href="#nutanix" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Controle de domaine
+              Nutanix
             
           </span>
         </div>
@@ -300,29 +300,9 @@
       
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Controle de domaine
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../6trs_dm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -331,47 +311,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#presentation" class="md-nav__link">
-    Présentation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installation-dns" class="md-nav__link">
-     Installation DNS
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installation-dhcp" class="md-nav__link">
-     Installation DHCP
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -494,9 +433,29 @@
       
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../nutanix/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Nutanix
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -505,6 +464,47 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#presentation" class="md-nav__link">
+    Présentation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#initialisation-a-nutanix" class="md-nav__link">
+     Initialisation à Nutanix
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creation-de-la-machine-virtuelle" class="md-nav__link">
+     Création de la machine virtuelle
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -600,15 +600,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#installation-dns" class="md-nav__link">
-     Installation DNS
+  <a href="#initialisation-a-nutanix" class="md-nav__link">
+     Initialisation à Nutanix
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#installation-dhcp" class="md-nav__link">
-     Installation DHCP
+  <a href="#creation-de-la-machine-virtuelle" class="md-nav__link">
+     Création de la machine virtuelle
   </a>
   
 </li>
@@ -628,48 +628,36 @@
                   
 
 
-<h1 id="controle-de-domaine"><strong>Controle de domaine</strong></h1>
+<h1 id="nutanix"><strong>Nutanix</strong></h1>
 <h2 id="presentation">Présentation</h2>
-<p><strong>Le Contrôleur de Domaine</strong> (ou Domain Controller en anglais) est un élément central dans la gestion d'un réseau basé sur le <strong>système d'exploitation Windows</strong>. Il joue un rôle fondamental dans la gestion de l'authentification des utilisateurs, la sécurité des données et la gestion des ressources au sein d'un réseau. Le Contrôleur de Domaine est souvent utilisé dans des environnements d'entreprise pour centraliser la gestion des utilisateurs, des ordinateurs et des ressources réseau.</p>
-<h2 id="installation-dns"><span style="color: darkblue"> <strong>Installation DNS</strong></h2>
-<p><strong>- Étape 1 :</strong> Installation du service DNS</p>
-<p>Je me connecte à mon serveur Windows.</p>
-<p>J'ouvre le "Gestionnaire de serveur" depuis le menu "Gérer" dans la barre des tâches ou en tapant "ServerManager" dans la ligne de commande.</p>
-<p>Dans le Gestionnaire de serveur, je clique sur "Gérer" dans le coin supérieur droit, puis je sélectionne "Ajouter des rôles et des fonctionnalités".</p>
-<p>Je suis l'assistant d'ajout de rôles et de fonctionnalités et sélectionne le rôle "Serveur DNS".</p>
-<p>Je termine l'installation en suivant les étapes de l'assistant. Une fois l'installation terminée, je ferme l'assistant.</p>
-<p><strong>- Étape 2 :</strong> Configuration du service DNS pour "local.tours.sportludique.fr"</p>
-<p>Après l'installation, je vais dans le "Gestionnaire de serveur" et je développe "Outils" &gt; "Services de rôles" &gt; "Serveur DNS".</p>
-<p>Sous "Serveur DNS", je clique avec le bouton droit sur le serveur DNS nouvellement installé et je sélectionne "Nouvelle zone de recherche directe" (Forward Lookup Zone).</p>
-<p>Dans l'assistant de création de zone, je choisis de créer une zone primaire et j'entre "local.tours.sportludique.fr" comme nom de zone.</p>
-<p><strong>- Étape 3 :</strong> Vérification et test du service DNS</p>
-<p>Pour tester le service DNS, je peux utiliser la commande "nslookup" sur le serveur ou d'autres machines de mon réseau pour résoudre des noms de domaine en adresses IP.</p>
-<p>Je peux également configurer la machine virtuelle Windows 10 client (mentionnée dans la précédente réponse) pour utiliser le serveur DNS nouvellement configuré en tant que serveur DNS primaire.</p>
-<p>Ensuite, je teste la résolution DNS en utilisant des noms de domaine de "local.tours.sportludique.fr" pour m'assurer que les enregistrements DNS sont corrects et que les résolutions fonctionnent comme prévu.</p>
-<h2 id="installation-dhcp"><span style="color: darkblue"> <strong>Installation DHCP</strong></h2>
-<p><strong>- Étape 1 :</strong> Installation du serveur DHCP</p>
-<p>Je me connecte à mon serveur Windows (dans mon cas, Windows Server 2016 ou version ultérieure).</p>
-<p>J'ouvre le "Gestionnaire de serveur" depuis le menu "Gérer" dans la barre des tâches ou en tapant "ServerManager" dans la ligne de commande.</p>
-<p>Dans le Gestionnaire de serveur, je clique sur "Gérer" dans le coin supérieur droit, puis je sélectionne "Ajouter des rôles et des fonctionnalités".</p>
-<p>Je suis l'assistant d'ajout de rôles et de fonctionnalités et sélectionne le rôle "Serveur DHCP".</p>
-<p>Je termine l'installation en suivant les étapes de l'assistant. Une fois l'installation terminée, je ferme l'assistant.</p>
-<p><strong>- Étape 2 :</strong> Configuration des étendues DHCP</p>
-<p>Après l'installation, je vais dans le "Gestionnaire de serveur" et je développe "Outils" &gt; "Services de rôles" &gt; "Serveur DHCP".</p>
-<p>Sous "Serveur DHCP", je clique avec le bouton droit sur le serveur DHCP nouvellement installé et je sélectionne "Nouvelle étendue".</p>
-<p>Je configure la première étendue "Conception" en spécifiant une plage d'adresses IP de 172.28.38.10 à 172.28.38.250, le masque de sous-réseau approprié (généralement 255.255.255.0), la passerelle par défaut et les serveurs DNS.</p>
-<p>Je répète le processus pour créer la deuxième étendue "Production" en spécifiant la plage d'adresses IP de 172.28.39.10 à 172.28.39.250, ainsi que les autres paramètres requis.</p>
-<p>Une fois les étendues configurées, je les active pour permettre au serveur DHCP de distribuer des adresses IP.</p>
-<p><strong>- Étape 3 :</strong> Configuration de la machine virtuelle Windows 10 client</p>
-<p>J'installe Oracle VM VirtualBox sur ma machine si ce n'est pas déjà fait, puis je le lance.</p>
-<p>Je crée une nouvelle machine virtuelle en spécifiant Windows 10 comme système d'exploitation invité et en suivant les étapes de configuration (mémoire, disque dur virtuel, etc.).</p>
-<p>Dans les paramètres de la machine virtuelle, je vais dans "Réseau" et je configure l'adaptateur réseau en mode "Bridged" (pont) pour qu'il puisse se connecter au réseau physique.</p>
-<p>Je démarre la machine virtuelle Windows 10 et je m'assure qu'elle obtient une adresse IP automatiquement du serveur DHCP que j'ai configuré précédemment.</p>
-<p>Je vérifie que la machine virtuelle peut accéder au réseau et à Internet.</p>
-<p><strong>- Étape 4 :</strong> Test du serveur DHCP et du domaine</p>
-<p>Je peux maintenant tester le serveur DHCP en vérifiant si la machine virtuelle Windows 10 reçoit une adresse IP de l'une des étendues que j'ai configurées (Conception ou Production).</p>
-<p>Si la machine virtuelle reçoit avec succès une adresse IP, je peux également tester la connectivité au serveur DHCP en exécutant des commandes telles que "ipconfig /renew" pour renouveler l'adresse IP.</p>
-<p>Ensuite, je peux configurer la machine virtuelle Windows 10 pour rejoindre le domaine Active Directory (si déjà configuré) en utilisant les paramètres appropriés.</p>
-<p>Une fois connectée au domaine, je peux tester l'authentification en me connectant en tant qu'utilisateur du domaine et en accédant aux ressources partagées du réseau.</p>
+<p><strong>Nutanix</strong> est une solution informatique révolutionnaire qui simplifie considérablement la gestion de l'infrastructure informatique et des réseaux pour les entreprises. Elle est particulièrement pertinente pour les administrateurs réseau qui cherchent à optimiser la création et <strong>la gestion de machines virtuelles (VM) tout en assurant une administration réseau efficace.</strong></p>
+<h2 id="initialisation-a-nutanix"><span style="color: darkblue"> <strong>Initialisation à Nutanix</strong></h2>
+<p><strong>- Étape 1 :</strong> Accéder à l'URL fournie par votre professeur </p>
+<p>(<em>https://172.16.90.200:9440</em>)</p>
+<p><strong>- Étape 2 :</strong> Authentification sur la plateforme Nutanix </p>
+<p>Login : "nom"@lan.sio.lyceefulbert.fr</p>
+<p>Mot de passe : "Mdp de lan.sio.lyceefulbert.fr"</p>
+<p><strong>- Étape 3 :</strong> Accéder au tableau de bord Nutanix</p>
+<p><img alt="Tableau de bord Nutanix" src="../img/tbl_de_bord_nutanix.png" /></p>
+<p><strong>- Étape 4 :</strong> Création de votre machine virtuelle (VM)</p>
+<p><img alt="Create VM Nutanix" src="../img/create_vm_nutanix.png" /></p>
+<h2 id="creation-de-la-machine-virtuelle"><span style="color: darkblue"> <strong>Création de la machine virtuelle</strong></h2>
+<p><strong>- Étape 1 :</strong> Donner un nom à la VM</p>
+<p>Donner un nom significatif à la machine virtuelle, ici on utilise "TRS_DC_01" (Tours_Domaine Controller_Numéro 1). Cela permettra de l'identifier facilement dans notre environnement virtuel.</p>
+<p><strong>- Étape 2 :</strong> Attribution de la mémoire RAM</p>
+<p>Augmenter la quantité de RAM de la VM à 6 Go. Par défaut, il y a 4 Go de RAM, mais nous pouvons augmenter cette valeur pour répondre aux besoins de notre VM.</p>
+<p><strong>- Étape 3 :</strong> Ajouter l'ISO de Windows Server 2022</p>
+<p>Ajouter l'ISO de Windows Server 2022 à la VM. Utilisez l'ISO nommé "fr-fr_windows_server_2022_updated_aug_2023_x64_dvd_78639bda.iso" fourni par le professeur. Cela permettra de démarrer la VM à partir de cet ISO pour l'installation de Windows Server 2022.</p>
+<p><strong>- Étape 4 :</strong> Ajouter l'ISO de Nutanix</p>
+<p>Ajouter également l'ISO de Nutanix à la VM. Utilisez l'ISO nommé "Nutanix-VirtIO-1.2.1.iso" fourni par votre professeur. Cette étape est importante pour la configuration de la VM avec les pilotes et les outils nécessaires.</p>
+<p><strong>- Étape 5 :</strong> Ajouter un disque de 50 Go</p>
+<p>Ajouter un disque supplémentaire de 50 Go à la VM. Ce disque servira à stocker des fichiers, notamment les ISO que nous avons ajoutés précédemment.</p>
+<p><strong>- Étape 6 :</strong> Attacher un sous-réseau VLAN</p>
+<p>Associer un sous-réseau VLAN à la VM. On utilise le VLAN 222 qui a été précédemment configuré pour le serveur. Cette étape permet à la VM d'être connectée au réseau correct.</p>
+<p><strong>- Étape 7 :</strong> Activer "Use this VM as an agent VM"</p>
+<p>Cocher la case "Use this VM as an agent VM". Cela indique à la VM de fonctionner en tant que VM agent, ce qui peut être nécessaire pour certaines fonctionnalités de gestion spécifiques à Nutanix.</p>
+<p><strong>- Étape 8 :</strong> Créer la VM et suivre les étapes d'installation de Windows</p>
+<p>Enfin, créer la VM. Une fois la VM créée, démarrez-la à partir de l'ISO de Windows Server 2022 et suivez les étapes d'installation de Windows, en veillant à configurer les paramètres réseau et autres paramètres selon vos besoins. Sans oublier de sélectionner les hyperviseurs de Nutanix dans le dossier /Windows 2022/64x</p>
 
 
 

@@ -1,14 +1,14 @@
-# **Activation SSH**
+# Activation SSH
 
-##<span style="color: darkblue"> **Configurer le Switch**
+## Configurer le Switch
 
-#<span style="color: darkblue"> **Etape 1 :** Réinitialiser le switch
+### Etape 1 : Réinitialiser le switch
 
 Pour réinitialiser il nous suffit de rester appuié sur le bouton de réinitialisation du switch pendant 10sec
 
-#<span style="color: darkblue"> **Etape 2 :** Configuration
+### Etape 2 : Configuration
 
-#<span style="color: darkblue"> **Etape 3 :** Configuration de Base :
+### Etape 3 : Configuration de Base :
 
 Pour commencer nous allons changer le nom du switch :
 
@@ -38,13 +38,13 @@ Création d'un vlan de Management :
 | Transport-routeur | 229 |
 
 
-##<span style="color: darkblue"> **Activer le SSH sur un Switch Cisco**
+## Activer le SSH sur un Switch Cisco
 
-#<span style="color: darkblue"> **Etape 1 :** Vérifier la version de l'équipement Cisco pour le protocole SSH
+### Etape 1 : Vérifier la version de l'équipement Cisco pour le protocole SSH
 
 On vérifie la version du switch a l'aide de la commande #"show version" pour s'assuré que le switch soit compatible avec le protocole SSH.
 
-#<span style="color: darkblue"> **Etape 2 :** Création du nom d'hôte et du nom de domaine, et d'un mot de passe pour le mode privilégié
+### Etape 2 : Création du nom d'hôte et du nom de domaine, et d'un mot de passe pour le mode privilégié
 
 La création d’un nom d’hôte et d’un nom de domaine est indispensable à la configuration d’une connexion SSH. Vous devez donc être en mode configuration et réaliser les commandes suivantes :
 
@@ -56,7 +56,7 @@ Pour créer un mot de passe pour le mode privilégié, il faut se placer dans le
 
     #enable password "P@ssw0rd123456!"
 
-#<span style="color: darkblue"> **Etape 3 :** Génération de la paire de clés asymétriques RSA
+### Etape 3 : Génération de la paire de clés asymétriques RSA
 
 la clé RSA est une méthode de chiffrement dite asymétrique. Elle est composée de deux clés, une privée et une publique, chiffrées sur 768 bits minimum pour le SSH v2, et permet d’assurer une sécurité optimale. Pour générer cette paire de clés, il suffit d’entrer dans la conf puis entrer la commande :
 
@@ -64,7 +64,7 @@ la clé RSA est une méthode de chiffrement dite asymétrique. Elle est composé
 
 Il est également demandé d’entrer la taille souhaitée de la clé en bits. Il est préférable de choisir une taille supérieure à 768 bits pour assurer une plus grande sécurité. Nous avons ici choisi des clés de 1024 bits.
 
-#<span style="color: darkblue"> **Etape 4 :** Activation du protocole SSH sur le switch ou routeur Cisco
+### Etape 4 : Activation du protocole SSH sur le switch ou routeur Cisco
 
 Pour activer le protocole SSH, il suffit d’entrer la commande #“ip ssh version 2”. Il faut ensuite entrer en mode configuration de ligne VTY dans le but de :
 
@@ -87,7 +87,7 @@ Si vous n’avez pas encore créé de compte utilisateur, retournez en mode conf
 
 Pour vérifier que la configuration a bien été prise en compte par l’équipement, entrez “show run”.
 
-#<span style="color: darkblue"> **Etape 5 :** Test de connexion SSH avec PuTTy
+### Etape 5 : Test de connexion SSH avec PuTTy
 
 Windows ne possède pas de client SSH natif. Il faut donc en télécharger un. Il est possible d’utiliser PuTTy.
 
@@ -96,7 +96,7 @@ Pour le mettre en mode SSH, il vous suffit de cliquer sur “SSH” et d’entre
 ![Putty configuration](img/Putty_conf.PNG)
 
 
-##<span style="color: darkblue"> **Attribution d'un port a un vlan :**
+## Attribution d'un port a un vlan :
 
 On entre dans la configuration du switch puis on entre sur l'interface : 
 
@@ -120,7 +120,7 @@ On entre dans la configuration du switch puis on entre sur l'interface :
 | 229 | gi0/17 - gi0/19 - gi0/21 |
 
 
-##<span style="color: darkblue"> **Relais DHCP**
+## Relais DHCP
 
 On active le relais DHCP pour relayer la communication DHCP entre les hôtes et le serveur DHCP sur les Vlans :
 

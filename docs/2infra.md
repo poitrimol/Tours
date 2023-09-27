@@ -1,4 +1,4 @@
-# **Infrastructure de Tours**
+# Infrastructure de Tours
 
 ![Plan d'adressage](img/tours.png)
 

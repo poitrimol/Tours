@@ -1,10 +1,10 @@
-# **HSRP**
+# HSRP
 
 ## Présentation 
 
 Le protocole **HSRP** (Hot Standby Router Protocol) est un protocole de routage de premier hop redondant (FHRP) conçu pour améliorer la disponibilité et la redondance dans les réseaux locaux (LAN). Son objectif principal est de garantir la disponibilité et **la tolérance aux pannes** dans les environnements réseau en permettant à plusieurs routeurs de travailler ensemble pour créer une passerelle virtuelle commune. Elle assure une haute disponibilité pour le trafic entrant destiné à l'adresse IP virtuelle, en permettant au routeur standby (passif) de prendre automatiquement le relais si le routeur actif échoue. Cela garantit une continuité de service pour les dispositifs connectés au réseau à travers cette interface.
 
-## <span style="color: darkblue"> **Mise en place du protocole HSRP**
+## Mise en place du protocole HSRP
 
 Une fois que tous les routeurs sont opérationnels (qu’ils font bien tous office de passerelle individuellement), nous pouvons passer à la mise en place du HSRP. Sur chaque routeur, il faut maintenant définir une IP (en plus des IP d’interfaces déjà définies) qui sera l’IP du routeur virtuel et une priorité si l’on souhaite changer celle par défaut :
 

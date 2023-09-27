@@ -1,12 +1,12 @@
-# **Controle de domaine**
+# Controle de domaine
 
 ## Présentation 
 
 **Le Contrôleur de Domaine** (ou Domain Controller en anglais) est un élément central dans la gestion d'un réseau basé sur le **système d'exploitation Windows**. Il joue un rôle fondamental dans la gestion de l'authentification des utilisateurs, la sécurité des données et la gestion des ressources au sein d'un réseau. Le Contrôleur de Domaine est souvent utilisé dans des environnements d'entreprise pour centraliser la gestion des utilisateurs, des ordinateurs et des ressources réseau.
 
-## <span style="color: darkblue"> **Installation DNS**
+## Installation DNS
 
-**- Étape 1 :** Installation du service DNS
+### - Étape 1 : Installation du service DNS
 
 Je me connecte à mon serveur Windows.
 
@@ -18,7 +18,7 @@ Je suis l'assistant d'ajout de rôles et de fonctionnalités et sélectionne le 
 
 Je termine l'installation en suivant les étapes de l'assistant. Une fois l'installation terminée, je ferme l'assistant.
 
-**- Étape 2 :** Configuration du service DNS pour "local.tours.sportludique.fr"
+### - Étape 2 : Configuration du service DNS pour "local.tours.sportludique.fr"
 
 Après l'installation, je vais dans le "Gestionnaire de serveur" et je développe "Outils" > "Services de rôles" > "Serveur DNS".
 
@@ -27,7 +27,7 @@ Sous "Serveur DNS", je clique avec le bouton droit sur le serveur DNS nouvelleme
 Dans l'assistant de création de zone, je choisis de créer une zone primaire et j'entre "local.tours.sportludique.fr" comme nom de zone.
 
 
-**- Étape 3 :** Vérification et test du service DNS
+### - Étape 3 : Vérification et test du service DNS
 
 Pour tester le service DNS, je peux utiliser la commande "nslookup" sur le serveur ou d'autres machines de mon réseau pour résoudre des noms de domaine en adresses IP.
 
@@ -36,9 +36,9 @@ Je peux également configurer la machine virtuelle Windows 10 client (mentionné
 Ensuite, je teste la résolution DNS en utilisant des noms de domaine de "local.tours.sportludique.fr" pour m'assurer que les enregistrements DNS sont corrects et que les résolutions fonctionnent comme prévu.
 
 
-## <span style="color: darkblue"> **Installation DHCP**
+## Installation DHCP
 
-**- Étape 1 :** Installation du serveur DHCP
+### - Étape 1 : Installation du serveur DHCP
 
 Je me connecte à mon serveur Windows (dans mon cas, Windows Server 2016 ou version ultérieure).
 
@@ -50,7 +50,7 @@ Je suis l'assistant d'ajout de rôles et de fonctionnalités et sélectionne le 
 
 Je termine l'installation en suivant les étapes de l'assistant. Une fois l'installation terminée, je ferme l'assistant.
 
-**- Étape 2 :** Configuration des étendues DHCP
+### - Étape 2 : Configuration des étendues DHCP
 
 Après l'installation, je vais dans le "Gestionnaire de serveur" et je développe "Outils" > "Services de rôles" > "Serveur DHCP".
 
@@ -62,7 +62,7 @@ Je répète le processus pour créer la deuxième étendue "Production" en spéc
 
 Une fois les étendues configurées, je les active pour permettre au serveur DHCP de distribuer des adresses IP.
 
-**- Étape 3 :** Configuration de la machine virtuelle Windows 10 client
+### - Étape 3 : Configuration de la machine virtuelle Windows 10 client
 
 J'installe Oracle VM VirtualBox sur ma machine si ce n'est pas déjà fait, puis je le lance.
 
@@ -74,7 +74,7 @@ Je démarre la machine virtuelle Windows 10 et je m'assure qu'elle obtient une a
 
 Je vérifie que la machine virtuelle peut accéder au réseau et à Internet.
 
-**- Étape 4 :** Test du serveur DHCP et du domaine
+### - Étape 4 : Test du serveur DHCP et du domaine
 
 Je peux maintenant tester le serveur DHCP en vérifiant si la machine virtuelle Windows 10 reçoit une adresse IP de l'une des étendues que j'ai configurées (Conception ou Production).
 
