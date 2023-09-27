@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../5nutanix/">
+        <link rel="prev" href="../Contexte/">
       
       
-        <link rel="next" href="../7routeur/">
+        <link rel="next" href="../firewall/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Controle de domaine - Documentation Tours</title>
+        <title>Activation SSH - Documentation Tours</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#controle-de-domaine" class="md-skip">
+        <a href="#activation-ssh" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Controle de domaine
+              Activation SSH
             
           </span>
         </div>
@@ -188,68 +188,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../2infra/" class="md-nav__link">
+      <a href="../Contexte/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Infrastructure de Tours
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../3activation_SSH/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activation SSH
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../4firewall/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Firewall
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../5nutanix/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Nutanix
+    Documentation de Tours
   </span>
   
 
@@ -277,7 +220,7 @@
           
   
   <span class="md-ellipsis">
-    Controle de domaine
+    Activation SSH
   </span>
   
 
@@ -288,7 +231,7 @@
         
   
   <span class="md-ellipsis">
-    Controle de domaine
+    Activation SSH
   </span>
   
 
@@ -310,37 +253,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#presentation" class="md-nav__link">
-    Présentation
+  <a href="#configurer-le-switch" class="md-nav__link">
+    Configurer le Switch
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installation-dns" class="md-nav__link">
-    Installation DNS
-  </a>
-  
-    <nav class="md-nav" aria-label="Installation DNS">
+    <nav class="md-nav" aria-label="Configurer le Switch">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#-etape-1-installation-du-service-dns" class="md-nav__link">
-    - Étape 1 : Installation du service DNS
+  <a href="#etape-1-reinitialiser-le-switch" class="md-nav__link">
+    Etape 1 : Réinitialiser le switch
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#-etape-2-configuration-du-service-dns-pour-localtourssportludiquefr" class="md-nav__link">
-    - Étape 2 : Configuration du service DNS pour "local.tours.sportludique.fr"
+  <a href="#etape-2-configuration" class="md-nav__link">
+    Etape 2 : Configuration
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#-etape-3-verification-et-test-du-service-dns" class="md-nav__link">
-    - Étape 3 : Vérification et test du service DNS
+  <a href="#etape-3-configuration-de-base" class="md-nav__link">
+    Etape 3 : Configuration de Base :
   </a>
   
 </li>
@@ -351,43 +287,64 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#installation-dhcp" class="md-nav__link">
-    Installation DHCP
+  <a href="#activer-le-ssh-sur-un-switch-cisco" class="md-nav__link">
+    Activer le SSH sur un Switch Cisco
   </a>
   
-    <nav class="md-nav" aria-label="Installation DHCP">
+    <nav class="md-nav" aria-label="Activer le SSH sur un Switch Cisco">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#-etape-1-installation-du-serveur-dhcp" class="md-nav__link">
-    - Étape 1 : Installation du serveur DHCP
+  <a href="#etape-1-verifier-la-version-de-lequipement-cisco-pour-le-protocole-ssh" class="md-nav__link">
+    Etape 1 : Vérifier la version de l'équipement Cisco pour le protocole SSH
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#-etape-2-configuration-des-etendues-dhcp" class="md-nav__link">
-    - Étape 2 : Configuration des étendues DHCP
+  <a href="#etape-2-creation-du-nom-dhote-et-du-nom-de-domaine-et-dun-mot-de-passe-pour-le-mode-privilegie" class="md-nav__link">
+    Etape 2 : Création du nom d'hôte et du nom de domaine, et d'un mot de passe pour le mode privilégié
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#-etape-3-configuration-de-la-machine-virtuelle-windows-10-client" class="md-nav__link">
-    - Étape 3 : Configuration de la machine virtuelle Windows 10 client
+  <a href="#etape-3-generation-de-la-paire-de-cles-asymetriques-rsa" class="md-nav__link">
+    Etape 3 : Génération de la paire de clés asymétriques RSA
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#-etape-4-test-du-serveur-dhcp-et-du-domaine" class="md-nav__link">
-    - Étape 4 : Test du serveur DHCP et du domaine
+  <a href="#etape-4-activation-du-protocole-ssh-sur-le-switch-ou-routeur-cisco" class="md-nav__link">
+    Etape 4 : Activation du protocole SSH sur le switch ou routeur Cisco
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-5-test-de-connexion-ssh-avec-putty" class="md-nav__link">
+    Etape 5 : Test de connexion SSH avec PuTTy
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attribution-dun-port-a-un-vlan" class="md-nav__link">
+    Attribution d'un port a un vlan :
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relais-dhcp" class="md-nav__link">
+    Relais DHCP
+  </a>
   
 </li>
       
@@ -405,11 +362,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../7routeur/" class="md-nav__link">
+      <a href="../firewall/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Routeurs
+    Firewall
   </span>
   
 
@@ -424,7 +381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../8hsrp/" class="md-nav__link">
+      <a href="../hsrp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -443,11 +400,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../9vlan/" class="md-nav__link">
+      <a href="../infra/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    VLAN
+    Infrastructure de Tours
   </span>
   
 
@@ -462,11 +419,68 @@
   
   
     <li class="md-nav__item">
-      <a href="../Contexte/" class="md-nav__link">
+      <a href="../nutanix/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Documentation de Tours
+    Nutanix
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../routeur/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Routeurs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trs_dm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Controle de domaine
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vlan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VLAN
   </span>
   
 
@@ -502,37 +516,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#presentation" class="md-nav__link">
-    Présentation
+  <a href="#configurer-le-switch" class="md-nav__link">
+    Configurer le Switch
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installation-dns" class="md-nav__link">
-    Installation DNS
-  </a>
-  
-    <nav class="md-nav" aria-label="Installation DNS">
+    <nav class="md-nav" aria-label="Configurer le Switch">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#-etape-1-installation-du-service-dns" class="md-nav__link">
-    - Étape 1 : Installation du service DNS
+  <a href="#etape-1-reinitialiser-le-switch" class="md-nav__link">
+    Etape 1 : Réinitialiser le switch
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#-etape-2-configuration-du-service-dns-pour-localtourssportludiquefr" class="md-nav__link">
-    - Étape 2 : Configuration du service DNS pour "local.tours.sportludique.fr"
+  <a href="#etape-2-configuration" class="md-nav__link">
+    Etape 2 : Configuration
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#-etape-3-verification-et-test-du-service-dns" class="md-nav__link">
-    - Étape 3 : Vérification et test du service DNS
+  <a href="#etape-3-configuration-de-base" class="md-nav__link">
+    Etape 3 : Configuration de Base :
   </a>
   
 </li>
@@ -543,43 +550,64 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#installation-dhcp" class="md-nav__link">
-    Installation DHCP
+  <a href="#activer-le-ssh-sur-un-switch-cisco" class="md-nav__link">
+    Activer le SSH sur un Switch Cisco
   </a>
   
-    <nav class="md-nav" aria-label="Installation DHCP">
+    <nav class="md-nav" aria-label="Activer le SSH sur un Switch Cisco">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#-etape-1-installation-du-serveur-dhcp" class="md-nav__link">
-    - Étape 1 : Installation du serveur DHCP
+  <a href="#etape-1-verifier-la-version-de-lequipement-cisco-pour-le-protocole-ssh" class="md-nav__link">
+    Etape 1 : Vérifier la version de l'équipement Cisco pour le protocole SSH
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#-etape-2-configuration-des-etendues-dhcp" class="md-nav__link">
-    - Étape 2 : Configuration des étendues DHCP
+  <a href="#etape-2-creation-du-nom-dhote-et-du-nom-de-domaine-et-dun-mot-de-passe-pour-le-mode-privilegie" class="md-nav__link">
+    Etape 2 : Création du nom d'hôte et du nom de domaine, et d'un mot de passe pour le mode privilégié
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#-etape-3-configuration-de-la-machine-virtuelle-windows-10-client" class="md-nav__link">
-    - Étape 3 : Configuration de la machine virtuelle Windows 10 client
+  <a href="#etape-3-generation-de-la-paire-de-cles-asymetriques-rsa" class="md-nav__link">
+    Etape 3 : Génération de la paire de clés asymétriques RSA
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#-etape-4-test-du-serveur-dhcp-et-du-domaine" class="md-nav__link">
-    - Étape 4 : Test du serveur DHCP et du domaine
+  <a href="#etape-4-activation-du-protocole-ssh-sur-le-switch-ou-routeur-cisco" class="md-nav__link">
+    Etape 4 : Activation du protocole SSH sur le switch ou routeur Cisco
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etape-5-test-de-connexion-ssh-avec-putty" class="md-nav__link">
+    Etape 5 : Test de connexion SSH avec PuTTy
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attribution-dun-port-a-un-vlan" class="md-nav__link">
+    Attribution d'un port a un vlan :
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relais-dhcp" class="md-nav__link">
+    Relais DHCP
+  </a>
   
 </li>
       
@@ -598,48 +626,156 @@
                   
 
 
-<h1 id="controle-de-domaine">Controle de domaine</h1>
-<h2 id="presentation">Présentation</h2>
-<p><strong>Le Contrôleur de Domaine</strong> (ou Domain Controller en anglais) est un élément central dans la gestion d'un réseau basé sur le <strong>système d'exploitation Windows</strong>. Il joue un rôle fondamental dans la gestion de l'authentification des utilisateurs, la sécurité des données et la gestion des ressources au sein d'un réseau. Le Contrôleur de Domaine est souvent utilisé dans des environnements d'entreprise pour centraliser la gestion des utilisateurs, des ordinateurs et des ressources réseau.</p>
-<h2 id="installation-dns">Installation DNS</h2>
-<h3 id="-etape-1-installation-du-service-dns">- Étape 1 : Installation du service DNS</h3>
-<p>Je me connecte à mon serveur Windows.</p>
-<p>J'ouvre le "Gestionnaire de serveur" depuis le menu "Gérer" dans la barre des tâches ou en tapant "ServerManager" dans la ligne de commande.</p>
-<p>Dans le Gestionnaire de serveur, je clique sur "Gérer" dans le coin supérieur droit, puis je sélectionne "Ajouter des rôles et des fonctionnalités".</p>
-<p>Je suis l'assistant d'ajout de rôles et de fonctionnalités et sélectionne le rôle "Serveur DNS".</p>
-<p>Je termine l'installation en suivant les étapes de l'assistant. Une fois l'installation terminée, je ferme l'assistant.</p>
-<h3 id="-etape-2-configuration-du-service-dns-pour-localtourssportludiquefr">- Étape 2 : Configuration du service DNS pour "local.tours.sportludique.fr"</h3>
-<p>Après l'installation, je vais dans le "Gestionnaire de serveur" et je développe "Outils" &gt; "Services de rôles" &gt; "Serveur DNS".</p>
-<p>Sous "Serveur DNS", je clique avec le bouton droit sur le serveur DNS nouvellement installé et je sélectionne "Nouvelle zone de recherche directe" (Forward Lookup Zone).</p>
-<p>Dans l'assistant de création de zone, je choisis de créer une zone primaire et j'entre "local.tours.sportludique.fr" comme nom de zone.</p>
-<h3 id="-etape-3-verification-et-test-du-service-dns">- Étape 3 : Vérification et test du service DNS</h3>
-<p>Pour tester le service DNS, je peux utiliser la commande "nslookup" sur le serveur ou d'autres machines de mon réseau pour résoudre des noms de domaine en adresses IP.</p>
-<p>Je peux également configurer la machine virtuelle Windows 10 client (mentionnée dans la précédente réponse) pour utiliser le serveur DNS nouvellement configuré en tant que serveur DNS primaire.</p>
-<p>Ensuite, je teste la résolution DNS en utilisant des noms de domaine de "local.tours.sportludique.fr" pour m'assurer que les enregistrements DNS sont corrects et que les résolutions fonctionnent comme prévu.</p>
-<h2 id="installation-dhcp">Installation DHCP</h2>
-<h3 id="-etape-1-installation-du-serveur-dhcp">- Étape 1 : Installation du serveur DHCP</h3>
-<p>Je me connecte à mon serveur Windows (dans mon cas, Windows Server 2016 ou version ultérieure).</p>
-<p>J'ouvre le "Gestionnaire de serveur" depuis le menu "Gérer" dans la barre des tâches ou en tapant "ServerManager" dans la ligne de commande.</p>
-<p>Dans le Gestionnaire de serveur, je clique sur "Gérer" dans le coin supérieur droit, puis je sélectionne "Ajouter des rôles et des fonctionnalités".</p>
-<p>Je suis l'assistant d'ajout de rôles et de fonctionnalités et sélectionne le rôle "Serveur DHCP".</p>
-<p>Je termine l'installation en suivant les étapes de l'assistant. Une fois l'installation terminée, je ferme l'assistant.</p>
-<h3 id="-etape-2-configuration-des-etendues-dhcp">- Étape 2 : Configuration des étendues DHCP</h3>
-<p>Après l'installation, je vais dans le "Gestionnaire de serveur" et je développe "Outils" &gt; "Services de rôles" &gt; "Serveur DHCP".</p>
-<p>Sous "Serveur DHCP", je clique avec le bouton droit sur le serveur DHCP nouvellement installé et je sélectionne "Nouvelle étendue".</p>
-<p>Je configure la première étendue "Conception" en spécifiant une plage d'adresses IP de 172.28.38.10 à 172.28.38.250, le masque de sous-réseau approprié (généralement 255.255.255.0), la passerelle par défaut et les serveurs DNS.</p>
-<p>Je répète le processus pour créer la deuxième étendue "Production" en spécifiant la plage d'adresses IP de 172.28.39.10 à 172.28.39.250, ainsi que les autres paramètres requis.</p>
-<p>Une fois les étendues configurées, je les active pour permettre au serveur DHCP de distribuer des adresses IP.</p>
-<h3 id="-etape-3-configuration-de-la-machine-virtuelle-windows-10-client">- Étape 3 : Configuration de la machine virtuelle Windows 10 client</h3>
-<p>J'installe Oracle VM VirtualBox sur ma machine si ce n'est pas déjà fait, puis je le lance.</p>
-<p>Je crée une nouvelle machine virtuelle en spécifiant Windows 10 comme système d'exploitation invité et en suivant les étapes de configuration (mémoire, disque dur virtuel, etc.).</p>
-<p>Dans les paramètres de la machine virtuelle, je vais dans "Réseau" et je configure l'adaptateur réseau en mode "Bridged" (pont) pour qu'il puisse se connecter au réseau physique.</p>
-<p>Je démarre la machine virtuelle Windows 10 et je m'assure qu'elle obtient une adresse IP automatiquement du serveur DHCP que j'ai configuré précédemment.</p>
-<p>Je vérifie que la machine virtuelle peut accéder au réseau et à Internet.</p>
-<h3 id="-etape-4-test-du-serveur-dhcp-et-du-domaine">- Étape 4 : Test du serveur DHCP et du domaine</h3>
-<p>Je peux maintenant tester le serveur DHCP en vérifiant si la machine virtuelle Windows 10 reçoit une adresse IP de l'une des étendues que j'ai configurées (Conception ou Production).</p>
-<p>Si la machine virtuelle reçoit avec succès une adresse IP, je peux également tester la connectivité au serveur DHCP en exécutant des commandes telles que "ipconfig /renew" pour renouveler l'adresse IP.</p>
-<p>Ensuite, je peux configurer la machine virtuelle Windows 10 pour rejoindre le domaine Active Directory (si déjà configuré) en utilisant les paramètres appropriés.</p>
-<p>Une fois connectée au domaine, je peux tester l'authentification en me connectant en tant qu'utilisateur du domaine et en accédant aux ressources partagées du réseau.</p>
+<h1 id="activation-ssh">Activation SSH</h1>
+<h2 id="configurer-le-switch">Configurer le Switch</h2>
+<h3 id="etape-1-reinitialiser-le-switch">Etape 1 : Réinitialiser le switch</h3>
+<p>Pour réinitialiser il nous suffit de rester appuié sur le bouton de réinitialisation du switch pendant 10sec</p>
+<h3 id="etape-2-configuration">Etape 2 : Configuration</h3>
+<h3 id="etape-3-configuration-de-base">Etape 3 : Configuration de Base :</h3>
+<p>Pour commencer nous allons changer le nom du switch :</p>
+<pre><code>#hostname "sw-tours"
+</code></pre>
+<p>Puis nous ajoutons un nom de domaine : </p>
+<pre><code>#ip domain-name "tours.sportludique.local"
+</code></pre>
+<p>Création d'un vlan de Management :</p>
+<pre><code>#vlan "220"
+#name "Management"
+#"exit"
+#int vlan 220
+#ip address 172.28.32.254 255.255.255.0
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Nom du Vlan</th>
+<th>Vlan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Management</td>
+<td>220</td>
+</tr>
+<tr>
+<td>DMZ</td>
+<td>221</td>
+</tr>
+<tr>
+<td>Srv-AD/DHCP</td>
+<td>222</td>
+</tr>
+<tr>
+<td>Conception</td>
+<td>226</td>
+</tr>
+<tr>
+<td>Production</td>
+<td>227</td>
+</tr>
+<tr>
+<td>Transport-firewall</td>
+<td>228</td>
+</tr>
+<tr>
+<td>Transport-routeur</td>
+<td>229</td>
+</tr>
+</tbody>
+</table>
+<h2 id="activer-le-ssh-sur-un-switch-cisco">Activer le SSH sur un Switch Cisco</h2>
+<h3 id="etape-1-verifier-la-version-de-lequipement-cisco-pour-le-protocole-ssh">Etape 1 : Vérifier la version de l'équipement Cisco pour le protocole SSH</h3>
+<p>On vérifie la version du switch a l'aide de la commande #"show version" pour s'assuré que le switch soit compatible avec le protocole SSH.</p>
+<h3 id="etape-2-creation-du-nom-dhote-et-du-nom-de-domaine-et-dun-mot-de-passe-pour-le-mode-privilegie">Etape 2 : Création du nom d'hôte et du nom de domaine, et d'un mot de passe pour le mode privilégié</h3>
+<p>La création d’un nom d’hôte et d’un nom de domaine est indispensable à la configuration d’une connexion SSH. Vous devez donc être en mode configuration et réaliser les commandes suivantes :</p>
+<p><screen></p>
+<p>Ici, nous avons choisi de donner pour nom d’hôte "admin" et pour nom de domaine tours.sportludique.fr.</p>
+<p>Pour créer un mot de passe pour le mode privilégié, il faut se placer dans le mode configuration et entrer la commande :</p>
+<pre><code>#enable password "P@ssw0rd123456!"
+</code></pre>
+<h3 id="etape-3-generation-de-la-paire-de-cles-asymetriques-rsa">Etape 3 : Génération de la paire de clés asymétriques RSA</h3>
+<p>la clé RSA est une méthode de chiffrement dite asymétrique. Elle est composée de deux clés, une privée et une publique, chiffrées sur 768 bits minimum pour le SSH v2, et permet d’assurer une sécurité optimale. Pour générer cette paire de clés, il suffit d’entrer dans la conf puis entrer la commande :</p>
+<pre><code>#crypto key generate rsa
+</code></pre>
+<p>Il est également demandé d’entrer la taille souhaitée de la clé en bits. Il est préférable de choisir une taille supérieure à 768 bits pour assurer une plus grande sécurité. Nous avons ici choisi des clés de 1024 bits.</p>
+<h3 id="etape-4-activation-du-protocole-ssh-sur-le-switch-ou-routeur-cisco">Etape 4 : Activation du protocole SSH sur le switch ou routeur Cisco</h3>
+<p>Pour activer le protocole SSH, il suffit d’entrer la commande #“ip ssh version 2”. Il faut ensuite entrer en mode configuration de ligne VTY dans le but de :</p>
+<ul>
+<li>n’accepter que les connexions SSH au switch, au moyen de la commande “transport input ssh” ;</li>
+<li>ne permettre que des connexions SSH vers d’autres équipements, au moyen de la commande “transport output ssh” ;</li>
+<li>enregistrer le compte utilisateur existant comme compte permettant de mettre en place la connexion en entrant “login local”.</li>
+</ul>
+<p>Commande</p>
+<pre><code>#ip ssh version 2
+#line vty 0 4
+#transport input ssh
+#transport output ssh
+#login local
+#exit
+</code></pre>
+<p>Si vous n’avez pas encore créé de compte utilisateur, retournez en mode configuration et entrez la commande suivante :</p>
+<pre><code>#username "nom_utilisateur" password "mot_de_passe"
+</code></pre>
+<p>Pour vérifier que la configuration a bien été prise en compte par l’équipement, entrez “show run”.</p>
+<h3 id="etape-5-test-de-connexion-ssh-avec-putty">Etape 5 : Test de connexion SSH avec PuTTy</h3>
+<p>Windows ne possède pas de client SSH natif. Il faut donc en télécharger un. Il est possible d’utiliser PuTTy.</p>
+<p>Pour le mettre en mode SSH, il vous suffit de cliquer sur “SSH” et d’entrer le nom d’hôte ou l’adresse IP de l’équipement auquel vous voulez vous connecter.</p>
+<p><img alt="Putty configuration" src="../img/Putty_conf.PNG" /></p>
+<h2 id="attribution-dun-port-a-un-vlan">Attribution d'un port a un vlan :</h2>
+<p>On entre dans la configuration du switch puis on entre sur l'interface : </p>
+<pre><code>#int gi0/1
+#switchport mode access
+#switchport access vlan 220
+#exit
+
+
+#show vlan
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Vlan</th>
+<th>Port attribuer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>220</td>
+<td>gi0/1</td>
+</tr>
+<tr>
+<td>221</td>
+<td>gi0/2</td>
+</tr>
+<tr>
+<td>222</td>
+<td>gi0/3</td>
+</tr>
+<tr>
+<td>226</td>
+<td>gi0/13</td>
+</tr>
+<tr>
+<td>227</td>
+<td>gi0/14</td>
+</tr>
+<tr>
+<td>228</td>
+<td>gi0/18 - gi0/20</td>
+</tr>
+<tr>
+<td>229</td>
+<td>gi0/17 - gi0/19 - gi0/21</td>
+</tr>
+</tbody>
+</table>
+<h2 id="relais-dhcp">Relais DHCP</h2>
+<p>On active le relais DHCP pour relayer la communication DHCP entre les hôtes et le serveur DHCP sur les Vlans :</p>
+<pre><code>#int vlan 222
+#ip helper-address 172.28.37.1
+
+#show run
+</code></pre>
 
 
 

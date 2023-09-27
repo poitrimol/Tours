@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../2infra/">
+        <link rel="prev" href="../infra/">
       
       
-        <link rel="next" href="../4firewall/">
+        <link rel="next" href="../routeur/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Activation SSH - Documentation Tours</title>
+        <title>Nutanix - Documentation Tours</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#activation-ssh" class="md-skip">
+        <a href="#nutanix" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Activation SSH
+              Nutanix
             
           </span>
         </div>
@@ -188,7 +188,83 @@
   
   
     <li class="md-nav__item">
-      <a href="../2infra/" class="md-nav__link">
+      <a href="../Contexte/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Documentation de Tours
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../activation_SSH/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Activation SSH
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../firewall/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firewall
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hsrp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HSRP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../infra/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -220,7 +296,7 @@
           
   
   <span class="md-ellipsis">
-    Activation SSH
+    Nutanix
   </span>
   
 
@@ -231,7 +307,7 @@
         
   
   <span class="md-ellipsis">
-    Activation SSH
+    Nutanix
   </span>
   
 
@@ -253,30 +329,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#configurer-le-switch" class="md-nav__link">
-    Configurer le Switch
+  <a href="#presentation" class="md-nav__link">
+    Présentation
   </a>
   
-    <nav class="md-nav" aria-label="Configurer le Switch">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#initialisation-a-nutanix" class="md-nav__link">
+    Initialisation à Nutanix
+  </a>
+  
+    <nav class="md-nav" aria-label="Initialisation à Nutanix">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#etape-1-reinitialiser-le-switch" class="md-nav__link">
-    Etape 1 : Réinitialiser le switch
+  <a href="#-etape-1-acceder-a-lurl-fournie-par-votre-professeur" class="md-nav__link">
+    - Étape 1 : Accéder à l'URL fournie par votre professeur
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#etape-2-configuration" class="md-nav__link">
-    Etape 2 : Configuration
+  <a href="#-etape-2-authentification-sur-la-plateforme-nutanix" class="md-nav__link">
+    - Étape 2 : Authentification sur la plateforme Nutanix
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#etape-3-configuration-de-base" class="md-nav__link">
-    Etape 3 : Configuration de Base :
+  <a href="#-etape-3-acceder-au-tableau-de-bord-nutanix" class="md-nav__link">
+    - Étape 3 : Accéder au tableau de bord Nutanix
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-etape-4-creation-de-votre-machine-virtuelle-vm" class="md-nav__link">
+    - Étape 4 : Création de votre machine virtuelle (VM)
   </a>
   
 </li>
@@ -287,64 +377,71 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#activer-le-ssh-sur-un-switch-cisco" class="md-nav__link">
-    Activer le SSH sur un Switch Cisco
+  <a href="#creation-de-la-machine-virtuelle" class="md-nav__link">
+    Création de la machine virtuelle
   </a>
   
-    <nav class="md-nav" aria-label="Activer le SSH sur un Switch Cisco">
+    <nav class="md-nav" aria-label="Création de la machine virtuelle">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#etape-1-verifier-la-version-de-lequipement-cisco-pour-le-protocole-ssh" class="md-nav__link">
-    Etape 1 : Vérifier la version de l'équipement Cisco pour le protocole SSH
+  <a href="#-etape-1-donner-un-nom-a-la-vm" class="md-nav__link">
+    - Étape 1 : Donner un nom à la VM
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#etape-2-creation-du-nom-dhote-et-du-nom-de-domaine-et-dun-mot-de-passe-pour-le-mode-privilegie" class="md-nav__link">
-    Etape 2 : Création du nom d'hôte et du nom de domaine, et d'un mot de passe pour le mode privilégié
+  <a href="#-etape-2-attribution-de-la-memoire-ram" class="md-nav__link">
+    - Étape 2 : Attribution de la mémoire RAM
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#etape-3-generation-de-la-paire-de-cles-asymetriques-rsa" class="md-nav__link">
-    Etape 3 : Génération de la paire de clés asymétriques RSA
+  <a href="#-etape-3-ajouter-liso-de-windows-server-2022" class="md-nav__link">
+    - Étape 3 : Ajouter l'ISO de Windows Server 2022
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#etape-4-activation-du-protocole-ssh-sur-le-switch-ou-routeur-cisco" class="md-nav__link">
-    Etape 4 : Activation du protocole SSH sur le switch ou routeur Cisco
+  <a href="#-etape-4-ajouter-liso-de-nutanix" class="md-nav__link">
+    - Étape 4 : Ajouter l'ISO de Nutanix
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#etape-5-test-de-connexion-ssh-avec-putty" class="md-nav__link">
-    Etape 5 : Test de connexion SSH avec PuTTy
+  <a href="#-etape-5-ajouter-un-disque-de-50-go" class="md-nav__link">
+    - Étape 5 : Ajouter un disque de 50 Go
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-etape-6-attacher-un-sous-reseau-vlan" class="md-nav__link">
+    - Étape 6 : Attacher un sous-réseau VLAN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-etape-7-activer-use-this-vm-as-an-agent-vm" class="md-nav__link">
+    - Étape 7 : Activer "Use this VM as an agent VM"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-etape-8-creer-la-vm-et-suivre-les-etapes-dinstallation-de-windows" class="md-nav__link">
+    - Étape 8 : Créer la VM et suivre les étapes d'installation de Windows
   </a>
   
 </li>
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#attribution-dun-port-a-un-vlan" class="md-nav__link">
-    Attribution d'un port a un vlan :
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#relais-dhcp" class="md-nav__link">
-    Relais DHCP
-  </a>
   
 </li>
       
@@ -362,64 +459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../4firewall/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Firewall
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../5nutanix/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Nutanix
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../6trs_dm/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Controle de domaine
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../7routeur/" class="md-nav__link">
+      <a href="../routeur/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -438,11 +478,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../8hsrp/" class="md-nav__link">
+      <a href="../trs_dm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    HSRP
+    Controle de domaine
   </span>
   
 
@@ -457,30 +497,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../9vlan/" class="md-nav__link">
+      <a href="../vlan/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     VLAN
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Contexte/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Documentation de Tours
   </span>
   
 
@@ -516,30 +537,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#configurer-le-switch" class="md-nav__link">
-    Configurer le Switch
+  <a href="#presentation" class="md-nav__link">
+    Présentation
   </a>
   
-    <nav class="md-nav" aria-label="Configurer le Switch">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#initialisation-a-nutanix" class="md-nav__link">
+    Initialisation à Nutanix
+  </a>
+  
+    <nav class="md-nav" aria-label="Initialisation à Nutanix">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#etape-1-reinitialiser-le-switch" class="md-nav__link">
-    Etape 1 : Réinitialiser le switch
+  <a href="#-etape-1-acceder-a-lurl-fournie-par-votre-professeur" class="md-nav__link">
+    - Étape 1 : Accéder à l'URL fournie par votre professeur
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#etape-2-configuration" class="md-nav__link">
-    Etape 2 : Configuration
+  <a href="#-etape-2-authentification-sur-la-plateforme-nutanix" class="md-nav__link">
+    - Étape 2 : Authentification sur la plateforme Nutanix
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#etape-3-configuration-de-base" class="md-nav__link">
-    Etape 3 : Configuration de Base :
+  <a href="#-etape-3-acceder-au-tableau-de-bord-nutanix" class="md-nav__link">
+    - Étape 3 : Accéder au tableau de bord Nutanix
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-etape-4-creation-de-votre-machine-virtuelle-vm" class="md-nav__link">
+    - Étape 4 : Création de votre machine virtuelle (VM)
   </a>
   
 </li>
@@ -550,64 +585,71 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#activer-le-ssh-sur-un-switch-cisco" class="md-nav__link">
-    Activer le SSH sur un Switch Cisco
+  <a href="#creation-de-la-machine-virtuelle" class="md-nav__link">
+    Création de la machine virtuelle
   </a>
   
-    <nav class="md-nav" aria-label="Activer le SSH sur un Switch Cisco">
+    <nav class="md-nav" aria-label="Création de la machine virtuelle">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#etape-1-verifier-la-version-de-lequipement-cisco-pour-le-protocole-ssh" class="md-nav__link">
-    Etape 1 : Vérifier la version de l'équipement Cisco pour le protocole SSH
+  <a href="#-etape-1-donner-un-nom-a-la-vm" class="md-nav__link">
+    - Étape 1 : Donner un nom à la VM
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#etape-2-creation-du-nom-dhote-et-du-nom-de-domaine-et-dun-mot-de-passe-pour-le-mode-privilegie" class="md-nav__link">
-    Etape 2 : Création du nom d'hôte et du nom de domaine, et d'un mot de passe pour le mode privilégié
+  <a href="#-etape-2-attribution-de-la-memoire-ram" class="md-nav__link">
+    - Étape 2 : Attribution de la mémoire RAM
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#etape-3-generation-de-la-paire-de-cles-asymetriques-rsa" class="md-nav__link">
-    Etape 3 : Génération de la paire de clés asymétriques RSA
+  <a href="#-etape-3-ajouter-liso-de-windows-server-2022" class="md-nav__link">
+    - Étape 3 : Ajouter l'ISO de Windows Server 2022
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#etape-4-activation-du-protocole-ssh-sur-le-switch-ou-routeur-cisco" class="md-nav__link">
-    Etape 4 : Activation du protocole SSH sur le switch ou routeur Cisco
+  <a href="#-etape-4-ajouter-liso-de-nutanix" class="md-nav__link">
+    - Étape 4 : Ajouter l'ISO de Nutanix
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#etape-5-test-de-connexion-ssh-avec-putty" class="md-nav__link">
-    Etape 5 : Test de connexion SSH avec PuTTy
+  <a href="#-etape-5-ajouter-un-disque-de-50-go" class="md-nav__link">
+    - Étape 5 : Ajouter un disque de 50 Go
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-etape-6-attacher-un-sous-reseau-vlan" class="md-nav__link">
+    - Étape 6 : Attacher un sous-réseau VLAN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-etape-7-activer-use-this-vm-as-an-agent-vm" class="md-nav__link">
+    - Étape 7 : Activer "Use this VM as an agent VM"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-etape-8-creer-la-vm-et-suivre-les-etapes-dinstallation-de-windows" class="md-nav__link">
+    - Étape 8 : Créer la VM et suivre les étapes d'installation de Windows
   </a>
   
 </li>
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#attribution-dun-port-a-un-vlan" class="md-nav__link">
-    Attribution d'un port a un vlan :
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#relais-dhcp" class="md-nav__link">
-    Relais DHCP
-  </a>
   
 </li>
       
@@ -626,156 +668,36 @@
                   
 
 
-<h1 id="activation-ssh">Activation SSH</h1>
-<h2 id="configurer-le-switch">Configurer le Switch</h2>
-<h3 id="etape-1-reinitialiser-le-switch">Etape 1 : Réinitialiser le switch</h3>
-<p>Pour réinitialiser il nous suffit de rester appuié sur le bouton de réinitialisation du switch pendant 10sec</p>
-<h3 id="etape-2-configuration">Etape 2 : Configuration</h3>
-<h3 id="etape-3-configuration-de-base">Etape 3 : Configuration de Base :</h3>
-<p>Pour commencer nous allons changer le nom du switch :</p>
-<pre><code>#hostname "sw-tours"
-</code></pre>
-<p>Puis nous ajoutons un nom de domaine : </p>
-<pre><code>#ip domain-name "tours.sportludique.local"
-</code></pre>
-<p>Création d'un vlan de Management :</p>
-<pre><code>#vlan "220"
-#name "Management"
-#"exit"
-#int vlan 220
-#ip address 172.28.32.254 255.255.255.0
-</code></pre>
-<table>
-<thead>
-<tr>
-<th>Nom du Vlan</th>
-<th>Vlan</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Management</td>
-<td>220</td>
-</tr>
-<tr>
-<td>DMZ</td>
-<td>221</td>
-</tr>
-<tr>
-<td>Srv-AD/DHCP</td>
-<td>222</td>
-</tr>
-<tr>
-<td>Conception</td>
-<td>226</td>
-</tr>
-<tr>
-<td>Production</td>
-<td>227</td>
-</tr>
-<tr>
-<td>Transport-firewall</td>
-<td>228</td>
-</tr>
-<tr>
-<td>Transport-routeur</td>
-<td>229</td>
-</tr>
-</tbody>
-</table>
-<h2 id="activer-le-ssh-sur-un-switch-cisco">Activer le SSH sur un Switch Cisco</h2>
-<h3 id="etape-1-verifier-la-version-de-lequipement-cisco-pour-le-protocole-ssh">Etape 1 : Vérifier la version de l'équipement Cisco pour le protocole SSH</h3>
-<p>On vérifie la version du switch a l'aide de la commande #"show version" pour s'assuré que le switch soit compatible avec le protocole SSH.</p>
-<h3 id="etape-2-creation-du-nom-dhote-et-du-nom-de-domaine-et-dun-mot-de-passe-pour-le-mode-privilegie">Etape 2 : Création du nom d'hôte et du nom de domaine, et d'un mot de passe pour le mode privilégié</h3>
-<p>La création d’un nom d’hôte et d’un nom de domaine est indispensable à la configuration d’une connexion SSH. Vous devez donc être en mode configuration et réaliser les commandes suivantes :</p>
-<p><screen></p>
-<p>Ici, nous avons choisi de donner pour nom d’hôte "admin" et pour nom de domaine tours.sportludique.fr.</p>
-<p>Pour créer un mot de passe pour le mode privilégié, il faut se placer dans le mode configuration et entrer la commande :</p>
-<pre><code>#enable password "P@ssw0rd123456!"
-</code></pre>
-<h3 id="etape-3-generation-de-la-paire-de-cles-asymetriques-rsa">Etape 3 : Génération de la paire de clés asymétriques RSA</h3>
-<p>la clé RSA est une méthode de chiffrement dite asymétrique. Elle est composée de deux clés, une privée et une publique, chiffrées sur 768 bits minimum pour le SSH v2, et permet d’assurer une sécurité optimale. Pour générer cette paire de clés, il suffit d’entrer dans la conf puis entrer la commande :</p>
-<pre><code>#crypto key generate rsa
-</code></pre>
-<p>Il est également demandé d’entrer la taille souhaitée de la clé en bits. Il est préférable de choisir une taille supérieure à 768 bits pour assurer une plus grande sécurité. Nous avons ici choisi des clés de 1024 bits.</p>
-<h3 id="etape-4-activation-du-protocole-ssh-sur-le-switch-ou-routeur-cisco">Etape 4 : Activation du protocole SSH sur le switch ou routeur Cisco</h3>
-<p>Pour activer le protocole SSH, il suffit d’entrer la commande #“ip ssh version 2”. Il faut ensuite entrer en mode configuration de ligne VTY dans le but de :</p>
-<ul>
-<li>n’accepter que les connexions SSH au switch, au moyen de la commande “transport input ssh” ;</li>
-<li>ne permettre que des connexions SSH vers d’autres équipements, au moyen de la commande “transport output ssh” ;</li>
-<li>enregistrer le compte utilisateur existant comme compte permettant de mettre en place la connexion en entrant “login local”.</li>
-</ul>
-<p>Commande</p>
-<pre><code>#ip ssh version 2
-#line vty 0 4
-#transport input ssh
-#transport output ssh
-#login local
-#exit
-</code></pre>
-<p>Si vous n’avez pas encore créé de compte utilisateur, retournez en mode configuration et entrez la commande suivante :</p>
-<pre><code>#username "nom_utilisateur" password "mot_de_passe"
-</code></pre>
-<p>Pour vérifier que la configuration a bien été prise en compte par l’équipement, entrez “show run”.</p>
-<h3 id="etape-5-test-de-connexion-ssh-avec-putty">Etape 5 : Test de connexion SSH avec PuTTy</h3>
-<p>Windows ne possède pas de client SSH natif. Il faut donc en télécharger un. Il est possible d’utiliser PuTTy.</p>
-<p>Pour le mettre en mode SSH, il vous suffit de cliquer sur “SSH” et d’entrer le nom d’hôte ou l’adresse IP de l’équipement auquel vous voulez vous connecter.</p>
-<p><img alt="Putty configuration" src="../img/Putty_conf.PNG" /></p>
-<h2 id="attribution-dun-port-a-un-vlan">Attribution d'un port a un vlan :</h2>
-<p>On entre dans la configuration du switch puis on entre sur l'interface : </p>
-<pre><code>#int gi0/1
-#switchport mode access
-#switchport access vlan 220
-#exit
-
-
-#show vlan
-</code></pre>
-<table>
-<thead>
-<tr>
-<th>Vlan</th>
-<th>Port attribuer</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>220</td>
-<td>gi0/1</td>
-</tr>
-<tr>
-<td>221</td>
-<td>gi0/2</td>
-</tr>
-<tr>
-<td>222</td>
-<td>gi0/3</td>
-</tr>
-<tr>
-<td>226</td>
-<td>gi0/13</td>
-</tr>
-<tr>
-<td>227</td>
-<td>gi0/14</td>
-</tr>
-<tr>
-<td>228</td>
-<td>gi0/18 - gi0/20</td>
-</tr>
-<tr>
-<td>229</td>
-<td>gi0/17 - gi0/19 - gi0/21</td>
-</tr>
-</tbody>
-</table>
-<h2 id="relais-dhcp">Relais DHCP</h2>
-<p>On active le relais DHCP pour relayer la communication DHCP entre les hôtes et le serveur DHCP sur les Vlans :</p>
-<pre><code>#int vlan 222
-#ip helper-address 172.28.37.1
-
-#show run
-</code></pre>
+<h1 id="nutanix">Nutanix</h1>
+<h2 id="presentation">Présentation</h2>
+<p><strong>Nutanix</strong> est une solution informatique révolutionnaire qui simplifie considérablement la gestion de l'infrastructure informatique et des réseaux pour les entreprises. Elle est particulièrement pertinente pour les administrateurs réseau qui cherchent à optimiser la création et <strong>la gestion de machines virtuelles (VM) tout en assurant une administration réseau efficace.</strong></p>
+<h2 id="initialisation-a-nutanix">Initialisation à Nutanix</h2>
+<h3 id="-etape-1-acceder-a-lurl-fournie-par-votre-professeur">- Étape 1 : Accéder à l'URL fournie par votre professeur</h3>
+<p>(<em>https://172.16.90.200:9440</em>)</p>
+<h3 id="-etape-2-authentification-sur-la-plateforme-nutanix">- Étape 2 : Authentification sur la plateforme Nutanix</h3>
+<p>Login : "nom"@lan.sio.lyceefulbert.fr</p>
+<p>Mot de passe : "Mdp de lan.sio.lyceefulbert.fr"</p>
+<h3 id="-etape-3-acceder-au-tableau-de-bord-nutanix">- Étape 3 : Accéder au tableau de bord Nutanix</h3>
+<p><img alt="Tableau de bord Nutanix" src="../img/tbl_de_bord_nutanix.png" /></p>
+<h3 id="-etape-4-creation-de-votre-machine-virtuelle-vm">- Étape 4 : Création de votre machine virtuelle (VM)</h3>
+<p><img alt="Create VM Nutanix" src="../img/create_vm_nutanix.png" /></p>
+<h2 id="creation-de-la-machine-virtuelle">Création de la machine virtuelle</h2>
+<h3 id="-etape-1-donner-un-nom-a-la-vm">- Étape 1 : Donner un nom à la VM</h3>
+<p>Donner un nom significatif à la machine virtuelle, ici on utilise "TRS_DC_01" (Tours_Domaine Controller_Numéro 1). Cela permettra de l'identifier facilement dans notre environnement virtuel.</p>
+<h3 id="-etape-2-attribution-de-la-memoire-ram">- Étape 2 : Attribution de la mémoire RAM</h3>
+<p>Augmenter la quantité de RAM de la VM à 6 Go. Par défaut, il y a 4 Go de RAM, mais nous pouvons augmenter cette valeur pour répondre aux besoins de notre VM.</p>
+<h3 id="-etape-3-ajouter-liso-de-windows-server-2022">- Étape 3 : Ajouter l'ISO de Windows Server 2022</h3>
+<p>Ajouter l'ISO de Windows Server 2022 à la VM. Utilisez l'ISO nommé "fr-fr_windows_server_2022_updated_aug_2023_x64_dvd_78639bda.iso" fourni par le professeur. Cela permettra de démarrer la VM à partir de cet ISO pour l'installation de Windows Server 2022.</p>
+<h3 id="-etape-4-ajouter-liso-de-nutanix">- Étape 4 : Ajouter l'ISO de Nutanix</h3>
+<p>Ajouter également l'ISO de Nutanix à la VM. Utilisez l'ISO nommé "Nutanix-VirtIO-1.2.1.iso" fourni par votre professeur. Cette étape est importante pour la configuration de la VM avec les pilotes et les outils nécessaires.</p>
+<h3 id="-etape-5-ajouter-un-disque-de-50-go">- Étape 5 : Ajouter un disque de 50 Go</h3>
+<p>Ajouter un disque supplémentaire de 50 Go à la VM. Ce disque servira à stocker des fichiers, notamment les ISO que nous avons ajoutés précédemment.</p>
+<h3 id="-etape-6-attacher-un-sous-reseau-vlan">- Étape 6 : Attacher un sous-réseau VLAN</h3>
+<p>Associer un sous-réseau VLAN à la VM. On utilise le VLAN 222 qui a été précédemment configuré pour le serveur. Cette étape permet à la VM d'être connectée au réseau correct.</p>
+<h3 id="-etape-7-activer-use-this-vm-as-an-agent-vm">- Étape 7 : Activer "Use this VM as an agent VM"</h3>
+<p>Cocher la case "Use this VM as an agent VM". Cela indique à la VM de fonctionner en tant que VM agent, ce qui peut être nécessaire pour certaines fonctionnalités de gestion spécifiques à Nutanix.</p>
+<h3 id="-etape-8-creer-la-vm-et-suivre-les-etapes-dinstallation-de-windows">- Étape 8 : Créer la VM et suivre les étapes d'installation de Windows</h3>
+<p>Enfin, créer la VM. Une fois la VM créée, démarrez-la à partir de l'ISO de Windows Server 2022 et suivez les étapes d'installation de Windows, en veillant à configurer les paramètres réseau et autres paramètres selon vos besoins. Sans oublier de sélectionner les hyperviseurs de Nutanix dans le dossier /Windows 2022/64x</p>
 
 
 
