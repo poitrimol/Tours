@@ -38,7 +38,7 @@
 
 ## Plan d'adressage de Tours
 
-![Plan d'adressage](img/shema-reseau_Projet.png)
+![Plan d'adressage](img/Schema-reseau.png)
 
 ## Port attribuer au switch
 
