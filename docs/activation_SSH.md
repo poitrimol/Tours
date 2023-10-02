@@ -97,7 +97,7 @@ Windows ne possède pas de client SSH natif. Il faut donc en télécharger un. I
 
 Pour le mettre en mode SSH, il vous suffit de cliquer sur “SSH” et d’entrer le nom d’hôte ou l’adresse IP de l’équipement auquel vous voulez vous connecter.
 
-![Putty configuration](img/Putty_conf.PNG)
+
 
 
 >>>>>>> 5dc63981d1c577aa640fe29d883531e83baca20e
