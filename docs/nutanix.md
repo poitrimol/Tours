@@ -1,4 +1,4 @@
-# Nutanix
+# **Nutanix**
 
 ## Présentation 
 **Nutanix** est une solution informatique révolutionnaire qui simplifie considérablement la gestion de l'infrastructure informatique et des réseaux pour les entreprises. Elle est particulièrement pertinente pour les administrateurs réseau qui cherchent à optimiser la création et **la gestion de machines virtuelles (VM) tout en assurant une administration réseau efficace.**

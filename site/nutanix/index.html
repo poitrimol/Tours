@@ -207,25 +207,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../Activation%20Ssh/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activation Ssh
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../Contexte/" class="md-nav__link">
         
   
@@ -375,14 +356,14 @@
       
         <li class="md-nav__item">
   <a href="#initialisation-a-nutanix" class="md-nav__link">
-     Initialisation à Nutanix
+    Initialisation à Nutanix
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#creation-de-la-machine-virtuelle" class="md-nav__link">
-     Création de la machine virtuelle
+    Création de la machine virtuelle
   </a>
   
 </li>
@@ -487,14 +468,14 @@
       
         <li class="md-nav__item">
   <a href="#initialisation-a-nutanix" class="md-nav__link">
-     Initialisation à Nutanix
+    Initialisation à Nutanix
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#creation-de-la-machine-virtuelle" class="md-nav__link">
-     Création de la machine virtuelle
+    Création de la machine virtuelle
   </a>
   
 </li>
@@ -514,35 +495,59 @@
                   
 
 
-<h1 id="nutanix"><strong>Nutanix</strong></h1>
+<h1 id="nutanix">Nutanix</h1>
 <h2 id="presentation">Présentation</h2>
 <p><strong>Nutanix</strong> est une solution informatique révolutionnaire qui simplifie considérablement la gestion de l'infrastructure informatique et des réseaux pour les entreprises. Elle est particulièrement pertinente pour les administrateurs réseau qui cherchent à optimiser la création et <strong>la gestion de machines virtuelles (VM) tout en assurant une administration réseau efficace.</strong></p>
-<h2 id="initialisation-a-nutanix"><span style="color: darkblue"> <strong>Initialisation à Nutanix</strong></h2>
-<p><strong>- Étape 1 :</strong> Accéder à l'URL fournie par votre professeur </p>
+<h2 id="initialisation-a-nutanix">Initialisation à Nutanix</h2>
+<ul>
+<li>Étape 1 : Accéder à l'URL fournie par votre professeur </li>
+</ul>
 <p>(<em>https://172.16.90.200:9440</em>)</p>
-<p><strong>- Étape 2 :</strong> Authentification sur la plateforme Nutanix </p>
+<ul>
+<li>Étape 2 : Authentification sur la plateforme Nutanix </li>
+</ul>
 <p>Login : "nom"@lan.sio.lyceefulbert.fr</p>
 <p>Mot de passe : "Mdp de lan.sio.lyceefulbert.fr"</p>
-<p><strong>- Étape 3 :</strong> Accéder au tableau de bord Nutanix</p>
+<ul>
+<li>Étape 3 : Accéder au tableau de bord Nutanix</li>
+</ul>
 <p><img alt="Tableau de bord Nutanix" src="../img/tbl_de_bord_nutanix.png" /></p>
-<p><strong>- Étape 4 :</strong> Création de votre machine virtuelle (VM)</p>
+<ul>
+<li>Étape 4 : Création de votre machine virtuelle (VM)</li>
+</ul>
 <p><img alt="Create VM Nutanix" src="../img/create_vm_nutanix.png" /></p>
-<h2 id="creation-de-la-machine-virtuelle"><span style="color: darkblue"> <strong>Création de la machine virtuelle</strong></h2>
-<p><strong>- Étape 1 :</strong> Donner un nom à la VM</p>
+<h2 id="creation-de-la-machine-virtuelle">Création de la machine virtuelle</h2>
+<ul>
+<li>Étape 1 : Donner un nom à la VM</li>
+</ul>
 <p>Donner un nom significatif à la machine virtuelle, ici on utilise "TRS_DC_01" (Tours_Domaine Controller_Numéro 1). Cela permettra de l'identifier facilement dans notre environnement virtuel.</p>
-<p><strong>- Étape 2 :</strong> Attribution de la mémoire RAM</p>
+<ul>
+<li>Étape 2 : Attribution de la mémoire RAM</li>
+</ul>
 <p>Augmenter la quantité de RAM de la VM à 6 Go. Par défaut, il y a 4 Go de RAM, mais nous pouvons augmenter cette valeur pour répondre aux besoins de notre VM.</p>
-<p><strong>- Étape 3 :</strong> Ajouter l'ISO de Windows Server 2022</p>
+<ul>
+<li>Étape 3 : Ajouter l'ISO de Windows Server 2022</li>
+</ul>
 <p>Ajouter l'ISO de Windows Server 2022 à la VM. Utilisez l'ISO nommé "fr-fr_windows_server_2022_updated_aug_2023_x64_dvd_78639bda.iso" fourni par le professeur. Cela permettra de démarrer la VM à partir de cet ISO pour l'installation de Windows Server 2022.</p>
-<p><strong>- Étape 4 :</strong> Ajouter l'ISO de Nutanix</p>
+<ul>
+<li>Étape 4 : Ajouter l'ISO de Nutanix</li>
+</ul>
 <p>Ajouter également l'ISO de Nutanix à la VM. Utilisez l'ISO nommé "Nutanix-VirtIO-1.2.1.iso" fourni par votre professeur. Cette étape est importante pour la configuration de la VM avec les pilotes et les outils nécessaires.</p>
-<p><strong>- Étape 5 :</strong> Ajouter un disque de 50 Go</p>
+<ul>
+<li>Étape 5 : Ajouter un disque de 50 Go</li>
+</ul>
 <p>Ajouter un disque supplémentaire de 50 Go à la VM. Ce disque servira à stocker des fichiers, notamment les ISO que nous avons ajoutés précédemment.</p>
-<p><strong>- Étape 6 :</strong> Attacher un sous-réseau VLAN</p>
+<ul>
+<li>Étape 6 : Attacher un sous-réseau VLAN</li>
+</ul>
 <p>Associer un sous-réseau VLAN à la VM. On utilise le VLAN 222 qui a été précédemment configuré pour le serveur. Cette étape permet à la VM d'être connectée au réseau correct.</p>
-<p><strong>- Étape 7 :</strong> Activer "Use this VM as an agent VM"</p>
+<ul>
+<li>Étape 7 : Activer "Use this VM as an agent VM"</li>
+</ul>
 <p>Cocher la case "Use this VM as an agent VM". Cela indique à la VM de fonctionner en tant que VM agent, ce qui peut être nécessaire pour certaines fonctionnalités de gestion spécifiques à Nutanix.</p>
-<p><strong>- Étape 8 :</strong> Créer la VM et suivre les étapes d'installation de Windows</p>
+<ul>
+<li>Étape 8 : Créer la VM et suivre les étapes d'installation de Windows</li>
+</ul>
 <p>Enfin, créer la VM. Une fois la VM créée, démarrez-la à partir de l'ISO de Windows Server 2022 et suivez les étapes d'installation de Windows, en veillant à configurer les paramètres réseau et autres paramètres selon vos besoins. Sans oublier de sélectionner les hyperviseurs de Nutanix dans le dossier /Windows 2022/64x</p>
 
 
