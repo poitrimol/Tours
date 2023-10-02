@@ -89,12 +89,7 @@ Pour vérifier que la configuration a bien été prise en compte par l’équipe
 
 ### Etape 5 : Test de connexion SSH avec PuTTy
 
-Windows ne possède pas de client SSH natif. Il faut donc en télécharger un. Il est possible d’utiliser PuTTy.
-
 Pour le mettre en mode SSH, il vous suffit de cliquer sur “SSH” et d’entrer le nom d’hôte ou l’adresse IP de l’équipement auquel vous voulez vous connecter.
-
-![Putty configuration](img/Putty_conf.PNG)
-
 
 ## Attribution d'un port a un vlan :
 
