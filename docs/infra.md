@@ -1,4 +1,4 @@
-# Infrastructure de Tours
+# **Infrastructure de Tours**
 
 ![Plan d'adressage](img/tours.png)
 
@@ -34,6 +34,15 @@
 | 227 | 172.28.39.0 /24 | 172.28.39.1 - 172.28.39.254 | 172.28.39.255 | Production |
 | 228 | 172.28.40.0 /24 | 172.28.40.1 - 172.28.40.254 | 172.28.40.255 | Transport-firewall |
 | 229 | 172.28.41.0 /24 | 172.28.41.1 - 172.28.41.254 | 172.28.41.255 | Transport-routeur |
+
+
+## Plan d'adressage de Tours
+
+![Plan d'adressage](img/shema-reseau_Projet.png)
+
+## Port attribuer au switch
+
+![Ports switch](img/cablage-switch_Projet.png)
 
 ## Détails des équipements serveurs
 
