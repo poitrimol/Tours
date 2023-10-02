@@ -46,7 +46,7 @@ exit
 Je crée une liste d'accès étendue qui spécifie les adresses IP privées à traduire en adresses IP publiques :
 
 ```js
-R1_TRS(config)# ACCESS-LIST 1 PERMIT 172.28.32.0 0.0.31.255
+R1_TRS(config)# ACCESS-LIST 1 PERMIT 172.28.0.0 0.0.31.255
 ```
 
 L'expression "access-list 1 permit 172.28.32.0 0.0.31.255" définit une liste d'accès (ACL) sur un routeur Cisco pour permettre ou autoriser le trafic provenant de l'adresse IP spécifiée, 172.28.32.0, avec un masque de sous-réseau de 0.0.31.255. Cette ACL est configurée pour autoriser (permit) tout le trafic provenant de l'intervalle d'adresses 172.28.32.0 à 172.28.63.255.
@@ -56,9 +56,21 @@ L'expression "access-list 1 permit 172.28.32.0 0.0.31.255" définit une liste d'
 Je configure le NAT/PAT en utilisant la liste d'accès (ACL) que j'ai créée :
 
 ```js
-R1_TRS(config)# IP NAT INSIDE SOURCE LIST 1 INTERFACE GI0/1 OVERLOAD
+R1_TRS(config)# IP NAT INSIDE SOURCE LIST 1 INTERFACE GIGABYTE0/1 OVERLOAD
 ```
 
+Création d'une étendue d'adresses utilisées pour la translation d'adresses :
+
+```js
+R1_TRS(config)# IP NAT POOL SORTIE 183.44.37.3 183.44.37.3 NETMASK 255.255.255.252
+```
+Cette plage permet 1 translations simultanées sur le routeur.
+
+On associe le tout pour mettre en œuvre le NAT :
+
+```js
+R1_TRS(config)# IP NAT INSIDE SOURCE LIST 1 POOL SORTIE
+```
 Spécifier la route par défaut.
 
 ```js
