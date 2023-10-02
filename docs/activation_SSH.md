@@ -111,8 +111,8 @@ On entre dans la configuration du switch puis on entre sur l'interface :
 
 | Vlan | Port attribuer |
 |-|-|
-| 220 | gi0/1 |
-| 221 | gi0/2 |
+| 220 | gi0/1 - gi0/2 |
+| 221 | ... |
 | 222 | gi0/3 |
 | 226 | gi0/13 |
 | 227 | gi0/14 |
