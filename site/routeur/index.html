@@ -188,11 +188,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../Contexte/" class="md-nav__link">
+      <a href="../ConfigurationSwitch/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Documentation de Tours
+    Activation SSH
   </span>
   
 
@@ -207,11 +207,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../configuration%20Switch/" class="md-nav__link">
+      <a href="../Contexte/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Activation SSH
+    Documentation de Tours
   </span>
   
 
@@ -386,7 +386,7 @@
         
   
   <span class="md-ellipsis">
-    Controle de domaine
+    Service DNS & DHCP
   </span>
   
 
@@ -514,21 +514,14 @@ exit
 <li>Étape 4 : Créer une liste d'accès (<strong>ACL</strong>)</li>
 </ul>
 <p>Je crée une liste d'accès étendue qui spécifie les adresses IP privées à traduire en adresses IP publiques :</p>
-<pre><code class="language-js">R1_TRS(config)# ACCESS-LIST 1 PERMIT 172.28.0.0 0.0.31.255
+<pre><code class="language-js">R1_TRS(config)# ACCESS-LIST 1 PERMIT 172.28.32.0 0.0.31.255
 </code></pre>
 <p>L'expression "access-list 1 permit 172.28.32.0 0.0.31.255" définit une liste d'accès (ACL) sur un routeur Cisco pour permettre ou autoriser le trafic provenant de l'adresse IP spécifiée, 172.28.32.0, avec un masque de sous-réseau de 0.0.31.255. Cette ACL est configurée pour autoriser (permit) tout le trafic provenant de l'intervalle d'adresses 172.28.32.0 à 172.28.63.255.</p>
 <ul>
 <li>Étape 5 : Configurer le <strong>NAT/PAT</strong></li>
 </ul>
 <p>Je configure le NAT/PAT en utilisant la liste d'accès (ACL) que j'ai créée :</p>
-<pre><code class="language-js">R1_TRS(config)# IP NAT INSIDE SOURCE LIST 1 INTERFACE GIGABYTE0/1 OVERLOAD
-</code></pre>
-<p>Création d'une étendue d'adresses utilisées pour la translation d'adresses :</p>
-<pre><code class="language-js">R1_TRS(config)# IP NAT POOL SORTIE 183.44.37.3 183.44.37.3 NETMASK 255.255.255.252
-</code></pre>
-<p>Cette plage permet 1 translations simultanées sur le routeur.</p>
-<p>On associe le tout pour mettre en œuvre le NAT :</p>
-<pre><code class="language-js">R1_TRS(config)# IP NAT INSIDE SOURCE LIST 1 POOL SORTIE
+<pre><code class="language-js">R1_TRS(config)# IP NAT INSIDE SOURCE LIST 1 INTERFACE GI0/1 OVERLOAD
 </code></pre>
 <p>Spécifier la route par défaut.</p>
 <pre><code class="language-js">R1_TRS(config)# IP ROUTE 0.0.0.0 0.0.0.0 183.44.37.2
