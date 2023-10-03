@@ -35,10 +35,20 @@
 | 228 | 172.28.40.0 /24 | 172.28.40.1 - 172.28.40.254 | 172.28.40.255 | Transport-firewall |
 | 229 | 172.28.41.0 /24 | 172.28.41.1 - 172.28.41.254 | 172.28.41.255 | Transport-routeur |
 
+| Port | Vlan |
+|-|-|
+| gi0/1 - gi0/2 | 220 |
+| ... | 221 |
+| gi0/3 | 222 |
+| gi0/13 | 226 |
+| gi0/14 | 227 |
+| gi0/18 - gi0/20 | 228 |
+| gi0/17 - gi0/19 - gi0/21 | 229 |
+
 
 ## Plan d'adressage de Tours
 
-![Plan d'adressage](img/schema-reseau.PNG)
+![Plan d'adressage](img/Schema-reseau.PNG)
 
 ## Port attribuer au switch
 
