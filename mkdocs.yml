@@ -5,6 +5,7 @@ theme:
 
 nav:
   - Documentation Tours: index.md
+  - Infrastructure : infra.md  
   - Configuration :
     - -Nutanix : nutanix.md
     - -DHCP & DNS : trs_dm.md
@@ -13,4 +14,3 @@ nav:
     - -HSRP & GLPB : hsrp.md
     - -Firewall : firewall.md
   - VLAN : vlan.md
-  - Infrastructure : infra.md
