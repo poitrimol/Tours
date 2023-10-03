@@ -13,3 +13,4 @@ nav:
     - -HSRP & GLPB : hsrp.md
     - -Firewall : firewall.md
   - VLAN : vlan.md
+  - Infrastructure : infra.md
