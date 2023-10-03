@@ -13,3 +13,4 @@ nav:
     - -Routeurs : routeur.md
     - -HSRP & GLPB : hsrp.md
     - -Firewall : firewall.md
+    - -Inter VLAN : inter_vlan.md
