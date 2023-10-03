@@ -1,9 +1,15 @@
-site_name: Documentation Tours
-
+site_name: Tours
 theme:
   name: material
   logo: img/sio.png
 
-markdown_extensions:
-  - attr_list
-  - md_in_html
+nav:
+  - Documentation Tours: index.md
+  - Configuration :
+    - -Nutanix : nutanix.md
+    - -DHCP & DNS : trs_dm.md
+    - -Switch : activation_SSH.md
+    - -Routeurs : routeur.md
+    - -HSRP & GLPB : hsrp.md
+    - -Firewall : firewall.md
+  - VLAN : vlan.md
