@@ -14,3 +14,4 @@ nav:
     - -HSRP & GLPB : hsrp.md
     - -Firewall : firewall.md
     - -Inter VLAN : inter_vlan.md
+    - -Port mirroring : port_mirroring.md
