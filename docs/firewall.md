@@ -28,6 +28,27 @@ Pour parametres les interfaces on se rend dans "NETWORK -> Interfaces" puis nous
 
 On mes des ip static sur chaque interfaces puis nous ajoutons la passerelle par default qui nous serviras a sortir (passerelle routeur).
 
-## Etape 6 : Règles de Filtrages
+## Etape 6 : Passerelle par defaut
 
-Pour le moment nous choissirons le type de filtrage en "Pass All" pour pouvoir faire nos test dans un premier temps.
+On ajoute la "Default Gateway" dans l'onglet "Network -> Routing".
+
+On crée un nouvel objet en tant que **Routeur** en ajoutant notre passerelle pour sortir du Parefeu vers les Routeurs.
+
+On peut tester un ping vers Google "8.8.8.8" sur le pc et le Firewall en faisant la commande :  
+
+    SYSTEM PING host="adresse ip de l'hote".
+
+
+
+## Etape 7 : Règles de Filtrages et de NAT
+
+Pour le moment nous choissirons le type de filtrage en "Pass All" pour pouvoir faire nos test.
+
+On ajoute une régle de NAT Dynamique qui va nous permettre de Naté une première fois via le Firewall avant les routeurs.
+
+![Règle de NAT](img/Regle-NAT.png) 
+
+## Etape 8 : Route Statique
+
+On ajoute les routes des sous réseaux de Production et de Conception, en définissant bien les réseaux en "Network" et non en "Hote" et la "Gateway" en "Routeur" et non un "Hote".
+

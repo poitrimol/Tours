@@ -93,7 +93,9 @@ Pour le mettre en mode SSH, il vous suffit de cliquer sur “SSH” et d’entre
 
 Pour le mettre en mode SSH, il vous suffit de cliquer sur “SSH” et d’entrer le nom d’hôte ou l’adresse IP de l’équipement auquel vous voulez vous connecter.
 
+### Etape 6 : Route par Defaut
 
+Ajouter la Route par Defaut sur le switch.
 
 
 ## Attribution d'un port a un vlan :

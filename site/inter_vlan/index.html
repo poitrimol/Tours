@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../hsrp/">
+        <link rel="prev" href="../firewall/">
       
       
-        <link rel="next" href="../inter_vlan/">
+        <link rel="next" href="../port_mirroring/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>-Firewall - Tours</title>
+        <title>-Inter VLAN - Tours</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#configuration-du-firewall" class="md-skip">
+        <a href="#inter-vlan" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              -Firewall
+              -Inter VLAN
             
           </span>
         </div>
@@ -360,6 +360,26 @@
                 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../firewall/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    -Firewall
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -375,7 +395,7 @@
           
   
   <span class="md-ellipsis">
-    -Firewall
+    -Inter VLAN
   </span>
   
 
@@ -386,7 +406,7 @@
         
   
   <span class="md-ellipsis">
-    -Firewall
+    -Inter VLAN
   </span>
   
 
@@ -408,8 +428,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    Installation
+  <a href="#presentation" class="md-nav__link">
+    Présentation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mise-en-place-de-linter-vlan" class="md-nav__link">
+    Mise en place de l'inter VLAN
   </a>
   
 </li>
@@ -418,26 +445,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../inter_vlan/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    -Inter VLAN
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -497,8 +504,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    Installation
+  <a href="#presentation" class="md-nav__link">
+    Présentation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mise-en-place-de-linter-vlan" class="md-nav__link">
+    Mise en place de l'inter VLAN
   </a>
   
 </li>
@@ -518,24 +532,73 @@
                   
 
 
-<h1 id="configuration-du-firewall"><strong>Configuration du Firewall</strong></h1>
-<h2 id="installation">Installation</h2>
-<h1 id="etape-1-se-connecter-au-firewall">Etape 1 : Se connecter au Firewall</h1>
-<p>Nous le connectons sur le PC pour la premiere utilisation.</p>
-<p>Nous accedons au firewall pour la premiere fois via un l'IP 10.0.0.254/8.
-Nous devons donc changer l'ip du poste dans l'adresse ip du Firewall, puis nous avons juste a ouvrir un navigateur tel que Google et se connecter au firewall via l'URL ""https://10.0.0.254/admin""</p>
-<h1 id="etape-2-activation-de-license">Etape 2 : Activation de License</h1>
-<p>Pour activer la License il nous suffit de ce rendre dans "SYSTEM -&gt; LICENSE", puis on ajoute la Licence (au préalable récuperer au près de Mr Mery).</p>
-<h1 id="etape-3-formatage-de-la-carte-sd">Etape 3 : Formatage de la carte SD</h1>
-<p>Pour Formater la carte SD nous nous rendons dans "NOTIFICATION -&gt; Logs" puis on choisi notre carte SD, puis on Format.</p>
-<h1 id="etape-4-parametres-du-firewall">Etape 4 : Parametres du Firewall</h1>
-<p>On décide de changer le mot de passe Admin.
-Pour ce faire nous nous rendons</p>
-<h1 id="etape-5-parametrages-interfaces">Etape 5 : Paramétrages Interfaces</h1>
-<p>Pour parametres les interfaces on se rend dans "NETWORK -&gt; Interfaces" puis nous configurons nos interfaces In et Out.</p>
-<p>On mes des ip static sur chaque interfaces puis nous ajoutons la passerelle par default qui nous serviras a sortir (passerelle routeur).</p>
-<h2 id="etape-6-regles-de-filtrages">Etape 6 : Règles de Filtrages</h2>
-<p>Pour le moment nous choissirons le type de filtrage en "Pass All" pour pouvoir faire nos test dans un premier temps.</p>
+<h1 id="inter-vlan"><strong>Inter VLAN</strong></h1>
+<h2 id="presentation">Présentation</h2>
+<p>La mise en place d'inter-VLAN avec le protocole 802.1Q offre de nombreux avantages pour la gestion et l'optimisation des réseaux d'entreprise. Cela permet de segmenter le trafic, renforçant ainsi la sécurité, optimisant les performances et isolant les domaines de diffusion. De plus, les VLANs permettent de séparer logiquement les fonctions, d'optimiser la bande passante, d'assurer l'évolutivité du réseau et de simplifier la gestion. En résumé, cette configuration est essentielle pour garantir une connectivité efficace et sécurisée au sein d'un réseau d'entreprise.</p>
+<p>Ici l'utilisation de l'inter-VLAN avec le protocole 802.1Q permet aux administrateurs du VLAN de management (VLAN 220) d'accéder et de gérer les routeurs sur le VLAN transport routeur (VLAN 229) de manière sécurisée. Cela garantit une connectivité efficace tout en maintenant la séparation logique et la sécurité entre ces deux VLANs.</p>
+<h2 id="mise-en-place-de-linter-vlan">Mise en place de l'inter VLAN</h2>
+<ul>
+<li>Étape 1 (sur commutateur) :</li>
+</ul>
+<p>Configuration des ports (0/11 et 0/12) en mode Trunk :</p>
+<pre><code class="language-js">sw_Tours# conf t
+sw_Tours(config)# int gi0/11
+sw_Tours(config-if)# switchport encapsulation dot1q
+sw_Tours(config-if)# switchport mode trunk
+sw_Tours(config-if)# no shut
+sw_Tours(config-if)# exi
+sw_Tours(config)# vtp mode transparent
+sw_Tours(config)# exi
+
+</code></pre>
+<pre><code class="language-js">sw_Tours# conf t
+sw_Tours(config)# int gi0/12
+sw_Tours(config-if)# switchport encapsulation dot1q
+sw_Tours(config-if)# switchport mode trunk
+sw_Tours(config-if)# no shut
+sw_Tours(config-if)# exi
+sw_Tours(config)# vtp mode transparent
+sw_Tours(config)# exi
+</code></pre>
+<p>Le "<strong>mode trunk</strong>" est utilisé sur un commutateur pour permettre le transport de plusieurs VLANs sur un port.</p>
+<p>La commande "<strong>encapsulation dot1Q</strong>" est utilisée sur une sous-interface de routeur pour prendre en charge les trames VLAN 802.1Q et les traiter en conséquence.</p>
+<p>Le <strong>mode transparent</strong> sert à éviter toute modification non autorisée des VLANs</p>
+<ul>
+<li>Étape 2 (sur R1_TRS) :</li>
+</ul>
+<p>Configuration des sous-interfaces VLAN sans oublier de remettre en place le procotole GLBP ainsi que le NAT :</p>
+<pre><code class="language-js">R1_TRS# conf t
+R1_TRS(config)# interface GigabitEthernet0/0.229
+R1_TRS(config-if)# encapsulation dot1Q 229
+R1_TRS(config-if)# ip address 172.28.41.253 255.255.255.0
+R1_TRS(config-if)# ip nat inside
+R1_TRS(config-if)# glbp 1 load-balancing host-dependent
+R1_TRS(config-if)# glbp 1 ip 172.28.41.254
+R1_TRS(config-if)# no shut
+</code></pre>
+<pre><code class="language-js">R1_TRS# conf t
+R1_TRS(config)# interface GigabitEthernet0/0.220
+R1_TRS(config-if)# encapsulation dot1Q 220
+R1_TRS(config-if)# ip address 172.28.32.100 255.255.255.0
+</code></pre>
+<ul>
+<li>Étape 3 (sur R2_TRS) :</li>
+</ul>
+<pre><code class="language-js">R2_TRS# conf t
+R2_TRS(config)# interface GigabitEthernet0/0.229
+R2_TRS(config-if)# encapsulation dot1Q 229
+R2_TRS(config-if)# ip address 172.28.41.252 255.255.255.0
+R2_TRS(config-if)# ip nat inside
+R2_TRS(config-if)# glbp 1 load-balancing host-dependent
+R2_TRS(config-if)# glbp 1 ip 172.28.41.254
+R2_TRS(config-if)# no shut
+</code></pre>
+<pre><code class="language-js">R2_TRS# conf t
+R2_TRS(config)# interface GigabitEthernet0/0.220
+R2_TRS(config-if)# encapsulation dot1Q 220
+R2_TRS(config-if)# ip address 172.28.32.200 255.255.255.0
+</code></pre>
+<p>Après avoir mis en place la configuration d'inter-VLAN avec le protocole 802.1Q, je peux maintenant me connecter depuis mon VLAN de gestion (VLAN 220) et administrer mes routeurs (VLAN 229).</p>
 
 
 
