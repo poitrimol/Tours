@@ -50,9 +50,13 @@
 
 ![Plan d'adressage](img/schema-reseau.png)
 
+## Plan d'adressage Vlan Management
+
+![Plan d'adressage vlan Management](img/Vlan-Management.png)
+
 ## Port attribuer au switch
 
-![Ports switch](img/cablage-switch_Projet.png)
+![Switch Coeur de Réseaux](img/SW-coeur-reseaux.png)
 
 ## Détails des équipements serveurs
 

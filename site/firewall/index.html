@@ -534,8 +534,18 @@ Pour ce faire nous nous rendons</p>
 <h1 id="etape-5-parametrages-interfaces">Etape 5 : Paramétrages Interfaces</h1>
 <p>Pour parametres les interfaces on se rend dans "NETWORK -&gt; Interfaces" puis nous configurons nos interfaces In et Out.</p>
 <p>On mes des ip static sur chaque interfaces puis nous ajoutons la passerelle par default qui nous serviras a sortir (passerelle routeur).</p>
-<h2 id="etape-6-regles-de-filtrages">Etape 6 : Règles de Filtrages</h2>
-<p>Pour le moment nous choissirons le type de filtrage en "Pass All" pour pouvoir faire nos test dans un premier temps.</p>
+<h2 id="etape-6-passerelle-par-defaut">Etape 6 : Passerelle par defaut</h2>
+<p>On ajoute la "Default Gateway" dans l'onglet "Network -&gt; Routing".</p>
+<p>On crée un nouvel objet en tant que <strong>Routeur</strong> en ajoutant notre passerelle pour sortir du Parefeu vers les Routeurs.</p>
+<p>On peut tester un ping vers Google "8.8.8.8" sur le pc et le Firewall en faisant la commande :  </p>
+<pre><code>SYSTEM PING host="adresse ip de l'hote".
+</code></pre>
+<h2 id="etape-7-regles-de-filtrages-et-de-nat">Etape 7 : Règles de Filtrages et de NAT</h2>
+<p>Pour le moment nous choissirons le type de filtrage en "Pass All" pour pouvoir faire nos test.</p>
+<p>On ajoute une régle de NAT Dynamique qui va nous permettre de Naté une première fois via le Firewall avant les routeurs.</p>
+<p><img alt="Règle de NAT" src="../img/Regle-NAT.png" /> </p>
+<h2 id="etape-8-route-statique">Etape 8 : Route Statique</h2>
+<p>On ajoute les routes des sous réseaux de Production et de Conception, en définissant bien les réseaux en "Network" et non en "Hote" et la "Gateway" en "Routeur" et non un "Hote".</p>
 
 
 

@@ -95,7 +95,7 @@ Pour le mettre en mode SSH, il vous suffit de cliquer sur “SSH” et d’entre
 
 ### Etape 6 : Route par Defaut
 
-Ajouter la Route par Defaut sur le switch.
+Ajouter la Route par Defaut sur le switch. La route par defaut va etre l'adresse IP qui va nous permettre de sortir vers le Firewall.
 
 
 ## Attribution d'un port a un vlan :
