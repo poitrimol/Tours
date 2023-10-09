@@ -39,7 +39,6 @@ On peut tester un ping vers Google "8.8.8.8" sur le pc et le Firewall en faisant
     SYSTEM PING host="adresse ip de l'hote".
 
 
-
 ## Etape 7 : Règles de Filtrages et de NAT
 
 Pour le moment nous choissirons le type de filtrage en "Pass All" pour pouvoir faire nos test.
