@@ -56,7 +56,7 @@
 
 ## Câblage Infrastructure
 
-![Cablage infrastructure](cablage-infra.png)
+![Cablage infrastructure](infra.png)
 
 ## Port attribuer au switch
 
