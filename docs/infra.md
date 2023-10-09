@@ -54,6 +54,10 @@
 
 ![Plan d'adressage vlan Management](img/Vlan-Management.png)
 
+## Câblage Infrastructure
+
+![Cablage infrastructure](cablage-infra.png)
+
 ## Port attribuer au switch
 
 ![Switch Coeur de Réseaux](img/SW-coeur-reseaux.png)
