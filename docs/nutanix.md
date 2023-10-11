@@ -69,6 +69,7 @@ Enfin, créer la VM. Une fois la VM créée, démarrez-la à partir de l'ISO de 
 ## Création VM HTTP
 
 Rajouter l'ACL sur les Routeurs pour que l'adresse réseau de la DMZ puisse accéder à Internet.
+Ajouter la redirection de port sur les routeurs pour le port 80.
 
 - Étape 1 : Donner un nom à la VM
 
