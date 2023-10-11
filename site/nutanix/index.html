@@ -328,6 +328,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#creation-vm-http" class="md-nav__link">
+    Création VM HTTP
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -531,6 +538,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#creation-vm-http" class="md-nav__link">
+    Création VM HTTP
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -600,6 +614,29 @@
 <li>Étape 8 : Créer la VM et suivre les étapes d'installation de Windows</li>
 </ul>
 <p>Enfin, créer la VM. Une fois la VM créée, démarrez-la à partir de l'ISO de Windows Server 2022 et suivez les étapes d'installation de Windows, en veillant à configurer les paramètres réseau et autres paramètres selon vos besoins. Sans oublier de sélectionner les hyperviseurs de Nutanix dans le dossier /Windows 2022/64x</p>
+<h2 id="creation-vm-http">Création VM HTTP</h2>
+<p>Rajouter l'ACL sur les Routeurs pour que l'adresse réseau de la DMZ puisse accéder à Internet.</p>
+<ul>
+<li>Étape 1 : Donner un nom à la VM</li>
+</ul>
+<p>Donner un nom significatif à la machine virtuelle, ici on utilise "TRS_SRV_HTTP" (Tours_Serveur_HTTP). Cela permettra de l'identifier facilement dans notre environnement virtuel.</p>
+<ul>
+<li>Étape 2 : Attribution de la mémoire RAM</li>
+</ul>
+<p>Diminuer la quantité de RAM de la VM à 2 Go. Par défaut, il y a 4 Go de RAM, mais nous pouvons diminuer cette valeur pour répondre aux besoins de notre VM.</p>
+<ul>
+<li>Étape 3 : Ajouter l'ISO de Debian 12</li>
+</ul>
+<p>Ajouter l'ISO de Debian 12 à la VM. Utilisez l'ISO nommé "debian-12.1.0-amd64-netinst.iso" fourni par le professeur. Cela permettra de démarrer la VM à partir de cet ISO.</p>
+<ul>
+<li>Étape 4 : Ajouter un disque de 25 Go</li>
+</ul>
+<p>Ajouter un disque de 25 Go à la VM. Ce disque servira à stocker des fichiers, notamment les ISO que nous avons ajoutés précédemment.</p>
+<ul>
+<li>Étape 6 : Attacher un sous-réseau VLAN</li>
+</ul>
+<p>Associer un sous-réseau VLAN à la VM. On utilise le VLAN 221 qui a été précédemment configurée. Cette étape permet à la VM d'être connectée au réseau correct.</p>
+<p>Ajouter les utilisateurs dans le sudo user.</p>
 
 
 
