@@ -68,31 +68,29 @@ Enfin, créer la VM. Une fois la VM créée, démarrez-la à partir de l'ISO de 
 
 ## Création VM HTTP
 
+Rajouter l'ACL sur les Routeurs pour que l'adresse réseau de la DMZ puisse accéder à Internet.
+
 - Étape 1 : Donner un nom à la VM
 
-Donner un nom significatif à la machine virtuelle, ici on utilise "TRS_SRV_HTTP" (Tours_Serveur HTTP). Cela permettra de l'identifier facilement dans notre environnement virtuel.
+Donner un nom significatif à la machine virtuelle, ici on utilise "TRS_SRV_HTTP" (Tours_Serveur_HTTP). Cela permettra de l'identifier facilement dans notre environnement virtuel.
 
 
 - Étape 2 : Attribution de la mémoire RAM
 
-Augmenter la quantité de RAM de la VM à 6 Go. Par défaut, il y a 4 Go de RAM, mais nous pouvons augmenter cette valeur pour répondre aux besoins de notre VM.
+Diminuer la quantité de RAM de la VM à 2 Go. Par défaut, il y a 4 Go de RAM, mais nous pouvons diminuer cette valeur pour répondre aux besoins de notre VM.
 
 
-- Étape 3 : Ajouter l'ISO de Windows Server 2022
+- Étape 3 : Ajouter l'ISO de Debian 12
 
-Ajouter l'ISO de Windows Server 2022 à la VM. Utilisez l'ISO nommé "fr-fr_windows_server_2022_updated_aug_2023_x64_dvd_78639bda.iso" fourni par le professeur. Cela permettra de démarrer la VM à partir de cet ISO pour l'installation de Windows Server 2022.
+Ajouter l'ISO de Debian 12 à la VM. Utilisez l'ISO nommé "debian-12.1.0-amd64-netinst.iso" fourni par le professeur. Cela permettra de démarrer la VM à partir de cet ISO.
 
+- Étape 4 : Ajouter un disque de 25 Go
 
-- Étape 4 : Ajouter l'ISO de Nutanix
-
-Ajouter également l'ISO de Nutanix à la VM. Utilisez l'ISO nommé "Nutanix-VirtIO-1.2.1.iso" fourni par votre professeur. Cette étape est importante pour la configuration de la VM avec les pilotes et les outils nécessaires.
-
-
-- Étape 5 : Ajouter un disque de 50 Go
-
-Ajouter un disque supplémentaire de 50 Go à la VM. Ce disque servira à stocker des fichiers, notamment les ISO que nous avons ajoutés précédemment.
-
+Ajouter un disque de 25 Go à la VM. Ce disque servira à stocker des fichiers, notamment les ISO que nous avons ajoutés précédemment.
 
 - Étape 6 : Attacher un sous-réseau VLAN
 
-Associer un sous-réseau VLAN à la VM. On utilise le VLAN 222 qui a été précédemment configuré pour le serveur. Cette étape permet à la VM d'être connectée au réseau correct.
+Associer un sous-réseau VLAN à la VM. On utilise le VLAN 221 qui a été précédemment configurée. Cette étape permet à la VM d'être connectée au réseau correct.
+
+Ajouter les utilisateurs dans le sudo user.
+
