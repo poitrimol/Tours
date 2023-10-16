@@ -29,3 +29,7 @@ Associer un sous-réseau VLAN à la VM. On utilise le VLAN 221 qui a été préc
 
 Ajouter les utilisateurs dans le sudo user.
 
+    sudo usermod -aG sudo "Nom d'utilisateur" 
+    sudo systemctl reboot
+
+
