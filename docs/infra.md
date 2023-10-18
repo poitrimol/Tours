@@ -39,7 +39,7 @@
 |-|-|
 | gi0/1 - gi0/2 | 220 |
 | ... | 221 |
-| gi0/3 | 222 |
+| gi0/3 | 225 |
 | gi0/13 | 226 |
 | gi0/14 | 227 |
 | gi0/18 - gi0/20 | 228 |
@@ -48,19 +48,19 @@
 
 ## Plan d'adressage de Tours
 
-![Plan d'adressage](img/schema-reseau.png)
+![Plan d'adressage](img/schema_reseau.png)
 
 ## Plan d'adressage Vlan Management
 
-![Plan d'adressage vlan Management](img/Vlan-Management.png)
+![Plan d'adressage vlan Management](img/shema-management.png)
 
 ## Câblage Infrastructure
 
-![Cablage infrastructure](img/cablage.png)
+![Cablage infrastructure](img/cablage_infra.png)
 
 ## Port attribuer au switch
 
-![Switch Coeur de Réseaux](img/SW-coeur-reseaux.png)
+![Switch Coeur de Réseaux](img/switch.png)
 
 ## Détails des équipements serveurs
 
