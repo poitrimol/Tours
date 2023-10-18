@@ -21,7 +21,7 @@ Ouvrir "DNS" depuis la barre de recherche Windows. Sous le noeud DNS, clic droit
 
 - Étape 4 : Créer une zone DNS principale
 
-Dans "DNS", développer le nœud du serveur DNS (le nom de notre serveur, appelé par défaut WIN-[...]) pour afficher la liste des zones DNS existantes.
+Dans "DNS", développer le nœud du serveur DNS (le nom de notre serveur) pour afficher la liste des zones DNS existantes.
 
 Cliquer avec le bouton droit sur "Zones de recherche directe" (Forward Lookup Zones) dans le volet gauche.
 
@@ -49,6 +49,41 @@ Dans "DNS", développer la zone principale que l'on a créée sous le nœud "Zon
 
 Cliquez avec le bouton droit sur la zone principale (de notre exemple, "tours.sportludique.fr") et sélectionner "Nouvel hôte (A ou AAAA)" pour ajouter un nouvel hôte DNS.
 
-Remplir le nom, dans notre exemple c'est www et l'adresse ip de notre serveur http, ici 221.87.137.2
+Remplir le nom, dans notre exemple c'est www et l'adresse ip publique de notre routeur, ici 183.44.37.1
 
 
+## Configuration DNS dans l'AD
+
+Pour les utilisateurs interne du réseau, le serveur dns sera notre Controleur de Domaine
+
+- Etape 1 : Creer la Zone tours.sportludique.fr
+
+Dans "DNS", développer le nœud du serveur DNS (le nom de notre serveur) pour afficher la liste des zones DNS existantes.
+
+Cliquer avec le bouton droit sur "Zones de recherche directe" (Forward Lookup Zones) dans le volet gauche.
+
+Sélectionnez "Nouvelle zone..." pour ouvrir l'Assistant de création de zone.
+
+- Etape 2 : Configuration de la Zone tours.sportludique.fr
+
+L'Assistant de création de zone s'ouvre. Cliquer sur "Suivant" pour commencer.
+
+Choisir le type de zone en sélectionnant "Zone Principale" pour créer une zone DNS principale, puis cliquez sur "Suivant".
+
+Saisissez le nom de domaine pour la nouvelle zone DNS principale créée. Par exemple, notre nom de zone est "tours.sportludique.fr", saisir "tours.sportludique.fr" et cliquez sur "Suivant".
+
+Enregistrer la zone dans un fichier spécifique (zone de stockage) ou de la laisser dans un fichier par défaut. Pour la plupart des configurations standard, on laisse la configuration par défaut. Cliquer sur "Suivant".
+
+On peut activer ou désactiver la mise à niveau dynamique. Cocher "Ne pas autoriser les mises à jour dynamique". Cliquez sur "Suivant".
+
+Cliquer sur "Fermer" pour valider la création.
+
+- Etape 3 : Ajout d'un Hôte
+
+Ouvrir "DNS" comme décrit précédemment.
+
+Dans "DNS", développer la zone principale que l'on a créée sous le nœud "Zones de recherche directe" (Forward Lookup Zones).
+
+Cliquez avec le bouton droit sur la zone principale (de notre exemple, "tours.sportludique.fr") et sélectionner "Nouvel hôte (A ou AAAA)" pour ajouter un nouvel hôte DNS.
+
+Remplir le nom, dans notre exemple c'est www et l'adresse ip de notre serveur http, ici 192.168.37.50

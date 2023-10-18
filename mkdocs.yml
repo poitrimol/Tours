@@ -16,3 +16,4 @@ nav:
     - -Inter VLAN : inter_vlan.md
     - -Port mirroring : port_mirroring.md
     - -Serveur HTTP : serveur_http.md
+    - -DNS : DNS.md
