@@ -48,11 +48,11 @@
 
 ## Plan d'adressage de Tours
 
-![Plan d'adressage](img/schema-reseau.png)
+![Plan d'adressage](img/schema_reseau.png)
 
 ## Plan d'adressage Vlan Management
 
-![Plan d'adressage vlan Management](img/Vlan-Management.png)
+![Plan d'adressage vlan Management](img/shema-management.png)
 
 ## Câblage Infrastructure
 
@@ -60,7 +60,7 @@
 
 ## Port attribuer au switch
 
-![Switch Coeur de Réseaux](img/SW-coeur-reseaux.png)
+![Switch Coeur de Réseaux](img/switch.png)
 
 ## Détails des équipements serveurs
 
