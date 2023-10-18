@@ -560,7 +560,11 @@ Ajouter la redirection de port sur les routeurs pour le port 80.</p>
 <li>Étape 5 : Attacher un sous-réseau VLAN</li>
 </ul>
 <p>Associer un sous-réseau VLAN à la VM. On utilise le VLAN 221 qui a été précédemment configurée. Cette étape permet à la VM d'être connectée au réseau correct.</p>
+<p>Une fois la VM lancée nous faisont l'installation </p>
 <p>Ajouter les utilisateurs dans le sudo user.</p>
+<pre><code>sudo usermod -aG sudo "Nom d'utilisateur" 
+sudo systemctl reboot
+</code></pre>
 
 
 
