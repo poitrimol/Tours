@@ -9,17 +9,17 @@ VM sous Windows Server 2022 via Nutanix.
 
 Une fois la VM configurée et installée, aller dans le Gestionnaire de serveur, aller sur Gérer tout en haut à droite puis ajouter sur des rôles et fonctionnalités
 
-- Etape 2 : Ajout du rôle DNS
+- Étape 2 : Ajout du rôle DNS
 
 Une fois dans le Gestionnaire de serveur, cliquer sur "Gérer" dans le coin supérieur droit, puis sélectionner "Ajouter des rôles et des fonctionnalités".
 
 Suivre l'Assistant d'installlation jusqu'à "Rôles de serveurs" et cocher "Serveur DNS" puis finir l'Assistant d'installation en suivant les étapes.
 
-- Etape 3 : Configuration de la nouvelle zone
+- Étape 3 : Configuration de la nouvelle zone
 
 Ouvrir "DNS" depuis la barre de recherche Windows. Sous le noeud DNS, clic droit sur le nom WIN et cliquer sur "Nouvelle zone"
 
-Étape 3 : Créer une zone DNS principale
+- Étape 4 : Créer une zone DNS principale
 
 Dans "DNS", développer le nœud du serveur DNS (le nom de notre serveur, appelé par défaut WIN-[...]) pour afficher la liste des zones DNS existantes.
 
@@ -27,7 +27,7 @@ Cliquer avec le bouton droit sur "Zones de recherche directe" (Forward Lookup Zo
 
 Sélectionnez "Nouvelle zone..." pour ouvrir l'Assistant de création de zone.
 
-Étape 3 : Configuration de la zone DNS principale
+- Étape 5 : Configuration de la zone DNS principale
 
 L'Assistant de création de zone s'ouvre. Cliquer sur "Suivant" pour commencer.
 
@@ -41,7 +41,7 @@ On peut activer ou désactiver la mise à niveau dynamique. Cocher "Ne pas autor
 
 Cliquer sur "Fermer" pour valider la création.
 
-- Étape 4 : Ajouter un hôte DNS à la zone principale
+- Étape 6 : Ajouter un hôte DNS à la zone principale
 
 Ouvrir "DNS" comme décrit précédemment.
 
