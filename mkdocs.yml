@@ -17,3 +17,5 @@ nav:
     - -Port mirroring : port_mirroring.md
     - -Serveur HTTP : serveur_http.md
     - -DNS : DNS.md
+    - -Certificat ssl : certificat ssl.md
+    - -Wordpress : wordpress.md

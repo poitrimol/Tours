@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../port_mirroring/">
+        <link rel="prev" href="../DNS/">
       
-      
-        <link rel="next" href="../DNS/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +18,7 @@
     
     
       
-        <title>-Serveur HTTP - Tours</title>
+        <title>-Wordpress - Tours</title>
       
     
     
@@ -65,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#creation-vm-http" class="md-skip">
+        <a href="#wordpress" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              -Serveur HTTP
+              -Wordpress
             
           </span>
         </div>
@@ -422,29 +420,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    -Serveur HTTP
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../serveur_http/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -453,33 +431,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
-    Configuration
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -529,9 +480,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../wordpress/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    -Wordpress
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -540,6 +511,33 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -579,8 +577,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
-    Configuration
+  <a href="#installation" class="md-nav__link">
+    Installation
   </a>
   
 </li>
@@ -600,35 +598,78 @@
                   
 
 
-<h1 id="creation-vm-http">Création VM HTTP</h1>
-<p>Rajouter l'ACL sur les Routeurs pour que l'adresse réseau de la DMZ puisse accéder à Internet.
-Ajouter la redirection de port sur les routeurs pour le port 80.</p>
-<h2 id="configuration">Configuration</h2>
+<h1 id="wordpress"><strong>Wordpress</strong></h1>
+<h2 id="installation">Installation</h2>
 <ul>
-<li>Étape 1 : Donner un nom à la VM</li>
+<li>Etape 1 : Télechargement du paquet Wordpress </li>
 </ul>
-<p>Donner un nom significatif à la machine virtuelle, ici on utilise "TRS_SRV_HTTP" (Tours_Serveur_HTTP). Cela permettra de l'identifier facilement dans notre environnement virtuel.</p>
-<ul>
-<li>Étape 2 : Attribution de la mémoire RAM</li>
-</ul>
-<p>Diminuer la quantité de RAM de la VM à 2 Go. Par défaut, il y a 4 Go de RAM, mais nous pouvons diminuer cette valeur pour répondre aux besoins de notre VM.</p>
-<ul>
-<li>Étape 3 : Ajouter l'ISO de Debian 12</li>
-</ul>
-<p>Ajouter l'ISO de Debian 12 à la VM. Utilisez l'ISO nommé "debian-12.1.0-amd64-netinst.iso" fourni par le professeur. Cela permettra de démarrer la VM à partir de cet ISO.</p>
-<ul>
-<li>Étape 4 : Ajouter un disque de 25 Go</li>
-</ul>
-<p>Ajouter un disque de 25 Go à la VM. Ce disque servira à stocker des fichiers, notamment les ISO que nous avons ajoutés précédemment.</p>
-<ul>
-<li>Étape 5 : Attacher un sous-réseau VLAN</li>
-</ul>
-<p>Associer un sous-réseau VLAN à la VM. On utilise le VLAN 221 qui a été précédemment configurée. Cette étape permet à la VM d'être connectée au réseau correct.</p>
-<p>Une fois la VM lancée nous faisont l'installation </p>
-<p>Ajouter les utilisateurs dans le sudo user.</p>
-<pre><code>sudo usermod -aG sudo "Nom d'utilisateur" 
-sudo systemctl reboot
+<p>On télécharge le paquet wordpress grace a la commande</p>
+<pre><code>cd /tmp 
+wget https://wordpress.org/latest.zip
 </code></pre>
+<ul>
+<li>Etape 2 : Création d'une basse de donnée Mariadb</li>
+</ul>
+<p>On creer une VM Debian 11 avec dessus Mariadb qui va servir de base de donnée pour le wordpress</p>
+<pre><code>mysql -u root -p
+</code></pre>
+<p>On créer la base de donnée 'blog'</p>
+<pre><code>CREATE DATABASE blog;
+</code></pre>
+<p>On créer un utilisateur avec les droits sur la base de donnée</p>
+<pre><code>CREATE USER 'Trswp'@'%' IDENTIFIED BY 'Votre-Super-Mot-De-Passe';
+</code></pre>
+<p>% = donne l'accès a tous les hotes est donc moin sécuriser, on devrais mettre l'adresse ip de notre serveur HTTP '192.168.37.50'</p>
+<p>On donne a l'utilisateur tous les droits </p>
+<pre><code>GRANT ALL PRIVILEGES ON blog.* TO 'Trswp'@'%';
+</code></pre>
+<p>on actualise les droits avec la commande</p>
+<pre><code>FLUSH PRIVILEGES;
+</code></pre>
+<p>On doit changé le Bind Address qui permet de lié une adresse ip </p>
+<pre><code>sudo nano etc/mysql/mariadb.conf.d/50-server.cnf
+
+bind-address        = 0.0.0.0 (autorise toutes les connexions)
+                    = 192.168.37.50 (autorise la connexions avec )
+</code></pre>
+<ul>
+<li>Etape 3 : Décompressage de l'archive wordpress</li>
+</ul>
+<p>on créer le fichier wordpress dans lequelle on va décompresser l'archive</p>
+<pre><code>sudo rm /var/www/html/wordpress
+</code></pre>
+<p>On installe l'extension Zip</p>
+<pre><code>sudo apt-get install zip
+</code></pre>
+<p>Ensuite on décompresse </p>
+<pre><code>sudo unzip latest.zip -d /var/www/wordpress
+</code></pre>
+<p>On ce déplace dans le dossier </p>
+<pre><code>cd /var/www/wordpress
+</code></pre>
+<p>On déplace tous le contenu du dossier wordpress a la racine du site</p>
+<pre><code>sudo mv wordpress/* /var/www/wordpress/
+</code></pre>
+<p>Ensuite on donne les droits a l'utilisateur de notre serveur Apache</p>
+<pre><code>sudo chown -R trs-admin:www-data /var/www/wordpress/
+</code></pre>
+<ul>
+<li>Etape 4 : Installation de Wordpress</li>
+</ul>
+<p>On se connecte a l'interface web avec l'adresse 'http://IP-SERVEUR'</p>
+<p>Si vous n'arriver pas a accédes a la page d'installation vous devez vous rendre sur votre serveur HTTP et ce rendre dans le fichier 'php.ini' et retirer le ; devant la ligne 'extension=mysqli'</p>
+<p><img alt="Extension mysqli" src="../img/mysqli.png" /></p>
+<p>On ajoute les informations </p>
+<p>Nom de la base de données : dans cet exemple, ce sera "blog"
+Identifiant : le nom de l'utilisateur qui a les droits sur la base de données, en l'occurrence "Trswp"
+Mot de passe : le mot de passe de cet utilisateur
+Adresse de la base de données : si le serveur Web et la base de données ne sont pas sur le même serveur, indiquez l'adresse IP du serveur distant '192.168.137.50'</p>
+<p>On envoie les informations pour que wordpress essaie de se connecter a la base de donnée.
+Si jamais Wordpress n'y arriver pas, vous devez ajouter un Enregistrement CNAME sur votre serveur DNS qui est dans le Vlan Serveur.</p>
+<p>Nom de l'alias : blog
+Nom de domaine : blog.tours.sportludique.fr
+Nom de domaine complet : www.tours.sportludique.fr.</p>
+<p>Et On suit l'installation après ça.</p>
 
 
 
