@@ -2,9 +2,11 @@
 
 ## Installation
 
-- Etape 1 : Télechargement du paquet Wordpress
+- Etape 1 : Télechargement du paquet Wordpress 
 
-    cd /tmp
+On télécharge le paquet wordpress grace a la commande
+
+    cd /tmp 
     wget https://wordpress.org/latest.zip
 
 - Etape 2 : Création d'une basse de donnée Mariadb
@@ -68,7 +70,7 @@ Ensuite on donne les droits a l'utilisateur de notre serveur Apache
 
 On se connecte a l'interface web avec l'adresse 'http://IP-SERVEUR'
 
-Si vous n'arriver pas a accedes a la page d'installation vous devez vous rendre sur votre serveur HTTP et ce rendre dans le fichier 'php.ini' et retirer le ; devant la ligne 'extension=mysqli'
+Si vous n'arriver pas a accédes a la page d'installation vous devez vous rendre sur votre serveur HTTP et ce rendre dans le fichier 'php.ini' et retirer le ; devant la ligne 'extension=mysqli'
 
 ![Extension mysqli](img/mysqli.png)
 
