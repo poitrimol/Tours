@@ -48,11 +48,11 @@
 
 ## Plan d'adressage de Tours
 
-![Plan d'adressage](img/schema_reseau.png)
+![Plan d'adressage](img/schema-reseau.png)
 
 ## Plan d'adressage Vlan Management
 
-![Plan d'adressage vlan Management](img/shema-management.png)
+![Plan d'adressage vlan Management](img/schema-management.png)
 
 ## Câblage Infrastructure
 
