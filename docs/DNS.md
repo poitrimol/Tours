@@ -87,3 +87,5 @@ Dans "DNS", développer la zone principale que l'on a créée sous le nœud "Zon
 Cliquez avec le bouton droit sur la zone principale (de notre exemple, "tours.sportludique.fr") et sélectionner "Nouvel hôte (A ou AAAA)" pour ajouter un nouvel hôte DNS.
 
 Remplir le nom, dans notre exemple c'est www et l'adresse ip de notre serveur http, ici 192.168.37.50
+
+Merci Bryan
