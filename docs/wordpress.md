@@ -38,7 +38,7 @@ On doit changé le Bind Address qui permet de lié une adresse ip
     sudo nano etc/mysql/mariadb.conf.d/50-server.cnf
 
     bind-address        = 0.0.0.0 (autorise toutes les connexions)
-                        = 192.168.37.50 (autorise la connexions avec )
+                        = 192.168.37.50 (autorise la connexions avec l'hôte)
 
 - Etape 3 : Décompressage de l'archive wordpress
 
