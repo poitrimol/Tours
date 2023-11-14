@@ -3,7 +3,7 @@ name: deploy
 on:
   push:
     branches:
-      - master 
+      - gh-pages
       - main
 permissions:
   contents: write
