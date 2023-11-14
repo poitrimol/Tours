@@ -48,7 +48,7 @@
 
 ## Plan d'adressage de Tours
 
-![Plan d'adressage](img/schema-reseau.png)
+![Plan d'adressage](img/schema-reseaux.png)
 
 ## Plan d'adressage Vlan Management
 
