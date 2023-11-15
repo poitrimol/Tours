@@ -31,7 +31,7 @@ Création d'un vlan de Management :
 |-|-|
 | Management | 220 |
 | DMZ | 221 |
-| Srv-AD/DHCP | 222 |
+| Serveur | 222 |
 | Conception | 226 |
 | Production | 227 |
 | Transport-firewall | 228 |
@@ -114,7 +114,6 @@ On entre dans la configuration du switch puis on entre sur l'interface :
 | Vlan | Port attribuer |
 |-|-|
 | 220 | gi0/1 - gi0/2 |
-| 221 | ... |
 | 222 | gi0/3 |
 | 226 | gi0/13 |
 | 227 | gi0/14 |
