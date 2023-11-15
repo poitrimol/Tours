@@ -30,8 +30,9 @@ Création d'un vlan de Management :
 | Nom du Vlan | Vlan |
 |-|-|
 | Management | 220 |
-| DMZ | 221 |
+| DMZ PUB | 221 |
 | Serveur | 222 |
+| DMZ PRV | 223 |
 | Conception | 226 |
 | Production | 227 |
 | Transport-firewall | 228 |
