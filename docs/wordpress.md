@@ -60,11 +60,11 @@ On ce déplace dans le dossier
 
 On déplace tous le contenu du dossier wordpress a la racine du site
 
-    sudo mv wordpress/* /var/www/wordpress/
+    sudo mv wordpress/* /var/www/wordpress/wordpress
 
 Ensuite on donne les droits a l'utilisateur de notre serveur Apache
 
-    sudo chown -R trs-admin:www-data /var/www/wordpress/
+    sudo chown -R trs-admin:www-data /var/www/wordpress/wordpress
 
 - Etape 4 : Installation de Wordpress
 
