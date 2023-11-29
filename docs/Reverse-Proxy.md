@@ -1,19 +1,19 @@
 ## Installation
 
-# Etape 1 : Création d'une VM Debian 12
+- Etape 1 : Création d'une VM Debian 12
 
-# Etape 2 : Installation de nginx
+- Etape 2 : Installation de nginx
 
 sudo apt-get update
 sudo apt-get install nginx
 
 ## Configurer nginx
 
-# Etape 1 : Acceder au fichier de conf de nginx
+- Etape 1 : Acceder au fichier de conf de nginx
 
 sudo nano /etc/nginx/nginx.conf
 
-# Etape 2 : Ajouter dans http { et modifier selon notre infrastructure : 
+- Etape 2 : Ajouter dans http { et modifier selon notre infrastructure : 
 server {
         listen 80;
         server_name www.tours.sportludique.fr ; 
@@ -54,13 +54,13 @@ server {
     }
 }
 
-# Etape 4 : Sauvegarder, fermer le fichier, tester et redémarrer nginx
+- Etape 4 : Sauvegarder, fermer le fichier, tester et redémarrer nginx
 
 sudo nginx -t //Permet de tester la configuration nginx
 
 sudo systemctl restart nginx //Permet de redémarrer ngninx
 
-# Etape 5 : Activer le support HTTPS
+- Etape 5 : Activer le support HTTPS
 
 server {
         listen 80;
@@ -129,7 +129,7 @@ server {
     }
 }
 
-# Etape 6 : Mettre les enregistrements dans le serveur DNS
+- Etape 6 : Mettre les enregistrements dans le serveur DNS
 
 www    CNAME   ReverseProxy.tours.sportludique.fr
 blog   CNAME   ReverseProxy.tours.sportludique.fr
