@@ -28,11 +28,10 @@ un certificat et une clé d'autorité de certification (CA) principale qui sont 
     ./easyrsa init-pki
 
 - Etape 5 : Génerer le Certificat et la clé de l'autorité de certification (CA)
-
+    
+    
     cd /usr/share/easy-rsa/
     ./easyrsa build-ca
-cd /usr/share/easy-rsa/
-./easyrsa build-ca
 
 Cela vous demandera la clé CA, la phrase de passe PEM ainsi que le nom commun du serveur.
 
