@@ -31,6 +31,8 @@ un certificat et une clé d'autorité de certification (CA) principale qui sont 
 
     cd /usr/share/easy-rsa/
     ./easyrsa build-ca
+cd /usr/share/easy-rsa/
+./easyrsa build-ca
 
 Cela vous demandera la clé CA, la phrase de passe PEM ainsi que le nom commun du serveur.
 
