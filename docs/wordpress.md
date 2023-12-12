@@ -38,7 +38,7 @@ On doit changé le Bind Address qui permet de lié une adresse ip
     sudo nano etc/mysql/mariadb.conf.d/50-server.cnf
 
     bind-address        = 0.0.0.0 (autorise toutes les connexions)
-                        = 192.168.37.50 (autorise la connexions avec )
+                        = 192.168.37.50 (autorise la connexions avec l'hôte)
 
 - Etape 3 : Décompressage de l'archive wordpress
 
@@ -60,11 +60,11 @@ On ce déplace dans le dossier
 
 On déplace tous le contenu du dossier wordpress a la racine du site
 
-    sudo mv wordpress/* /var/www/wordpress/
+    sudo mv wordpress/* /var/www/wordpress/wordpress
 
 Ensuite on donne les droits a l'utilisateur de notre serveur Apache
 
-    sudo chown -R trs-admin:www-data /var/www/wordpress/
+    sudo chown -R trs-admin:www-data /var/www/wordpress/wordpress
 
 - Etape 4 : Installation de Wordpress
 

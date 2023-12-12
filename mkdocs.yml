@@ -19,5 +19,7 @@ nav:
     - -DNS : DNS.md
     - -Certificat ssl : certificat ssl.md
     - -Wordpress : wordpress.md
+    - -Reverse Proxy : Reverse-Proxy.md
+    - -OpenVPN : OpenVPN.md
     - -Heartbeat : heartbeat.md
     - -Load Balancing : load_balancing.md

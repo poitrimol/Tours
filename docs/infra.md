@@ -48,7 +48,7 @@
 
 ## Plan d'adressage de Tours
 
-![Plan d'adressage](img/schema-reseau.png)
+![Plan d'adressage](img/schema-reseaux.png)
 
 ## Plan d'adressage Vlan Management
 
@@ -56,7 +56,7 @@
 
 ## Câblage Infrastructure
 
-![Cablage infrastructure](img/cablage_infra.png)
+![Cablage infrastructure](img/schema-infra.png)
 
 ## Port attribuer au switch
 
