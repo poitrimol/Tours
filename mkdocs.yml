@@ -19,3 +19,5 @@ nav:
     - -DNS : DNS.md
     - -Certificat ssl : certificat ssl.md
     - -Wordpress : wordpress.md
+    - -Heartbeat : heartbeat.md
+    - -Load Balancing : load_balancing.md
