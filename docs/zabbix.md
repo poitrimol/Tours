@@ -1,10 +1,15 @@
-# Installation de Zabbix
-
-## Installation
+## Installation de Zabbix 6.4 sous Debian 12
 
 Aller sur le site officiel de zabbix : zabbix.com/fr/download
 
-Mettre Version de Zabbix : 6.4, Debian, 12, ServerFrontend, Agent et suivre les instructions en bas
+# Configuration de l'Environnement Zabbix
+
+Version de Zabbix : 6.4
+Distribution OS : Debian
+Version du système d'exploitation : 12
+Composants Zabbix : Server, Frontend, Agent
+Base de données : MySQL
+Serveur WEB : Apache
 
 # Etape 1 : Installer le répertoire de Zabbix :
 
