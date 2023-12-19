@@ -28,7 +28,7 @@ Installation de la base de données MySQL, de l'interface Web, du Serveur Web Ap
 --> sudo mysql -uroot -p
 En mot de passe : password
 
-Une fois dans mysql entrer :
+Une fois dans mysql entré qui s'affichera en MariaDB [(none)]> :
 
 --> CREATE DATABASE zabbix character set utf8mb4 collate utf8mb4_bin;
 --> CREATE USER zabbix@localhost IDENTIFIED BY 'password';
@@ -39,6 +39,12 @@ Une fois dans mysql entrer :
 # Importation du Schéma de Base de Données Zabbix dans MySQL
 
 --> sudo zcat /usr/share/zabbix-sql-scripts/mysql/server.sql.gz | mysql --default-character-set=utf8mb4 -uzabbix -p zabbix
+
+Desactiver log_bin_trust_function_creators
+
+--> sudo mysql -uroot -p
+
+mariadb > set global log_bin_trust_function_creators = 0;
 
 # Editer le fichier /etc/zabbix/zabbix_server.conf
 
